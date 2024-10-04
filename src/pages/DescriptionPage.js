@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { View, Text, ActivityIndicator, Image, Animated, ScrollView, ImageBackground, TouchableOpacity, Modal, Button, Dimensions } from 'react-native';
 import { getDescriptionById } from '../server/firebaseConfig';
 import { useFonts } from "expo-font";
