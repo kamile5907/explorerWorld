@@ -28,26 +28,31 @@ const SPACING = 20;
       id: "Central Park",
       source: require("../../../images/imagesAmericaNorte/estadosunidos1.jpg"),
       title: "Central Park",
+      image: require("../../../images/imagesAmericaNorte/estadosunidos1.jpg"),
     },
     {
-      id: "Estátua da Liberdade",
+      id: "Estátua Da Liberdade",
       source: require("../../../images/imagesAmericaNorte/estadosunidos2.jpg"),
       title: "Estátua da Liberdade",
+      image: require("../../../images/imagesAmericaNorte/estadosunidos2.jpg"),
     },
     {
       id: "Ponte Golden Gate",
       source: require("../../../images/imagesAmericaNorte/estadosunidos3.jpg"),
       title: "Ponte Golden Gate",
+      image: require("../../../images/imagesAmericaNorte/estadosunidos3.jpg"),
     },
     {
       id: "Times Square",
       source: require("../../../images/imagesAmericaNorte/estadosunidos4.jpg"),
       title: "Times Square",
+      image: require("../../../images/imagesAmericaNorte/estadosunidos4.jpg"),
     },
     {
       id: "Walt Disney World Resort",
       source: require("../../../images/imagesAmericaNorte/estadosunidos5.jpg"),
       title: "Walt Disney World Resort",
+      image: require("../../../images/imagesAmericaNorte/estadosunidos5.jpg"),
     },
   ];
 
@@ -180,7 +185,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, image: item.image })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

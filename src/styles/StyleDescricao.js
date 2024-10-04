@@ -7,15 +7,16 @@ const stylesDescricao = StyleSheet.create({
     justifyContent: "center",
   },
   texto: {
-    color: "white", 
+    color: "black", 
     fontSize: 30, 
     fontFamily: "DisplayBold",
+    textAlign: "center"
   },
   texto2: {
-    color: "white", 
+    color: "black", 
     fontSize: 20, 
     fontFamily: "Noto", 
-    
+    textAlign: "center"
   },
   texto3: {
     color: "black", 
