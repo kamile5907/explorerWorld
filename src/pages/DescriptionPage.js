@@ -1,59 +1,23 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { View, Text, ActivityIndicator, Image, Animated, ScrollView, ImageBackground, TouchableOpacity, Modal, Button, Dimensions } from 'react-native';
+import { View, Text, ActivityIndicator, ScrollView, ImageBackground, TouchableOpacity, Modal, Animated, Dimensions, FlatList } from 'react-native';
 import { getDescriptionById } from '../server/firebaseConfig';
-import { useFonts } from "expo-font";
+import { useNavigation } from "@react-navigation/native";
 import stylesDescricao from "../styles/StyleDescricao";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-import { useNavigation } from "@react-navigation/native";
 
 function DescricaoPage({ route }) {
-  const { id, image } = route.params;  
+  const { id } = route.params;  
   const [description, setDescription] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [blur, setBlur] = useState(false);
-
+  const [visible, setVisible] = useState(false);
+  
   const navigation = useNavigation();
 
-  const [desaparecerView, setDesaparecerView] = useState(new Animated.Value(0));
-  const [aparecerView, setAparecerView] = useState(new Animated.Value(390)); 
-
-  useEffect(() => {
-    
-  }, []);
-
-  const FecharAnimaçao = () => {
-
-    setAparecerView(new Animated.Value(390));
-    setBlur(false);
-    Animated.sequence([
-      Animated.timing(desaparecerView, {
-        toValue: 390,  
-        duration: 2000,  
-        useNativeDriver: true, 
-      }),
-    ]).start();
-  }
-
-  const animatedView = () => {
-
-    setBlur(true)
-    Animated.sequence([
-      Animated.timing(aparecerView, {
-        toValue: 0, 
-        duration: 1500,  
-        useNativeDriver: true, 
-      }),
-    ]).start();
-  }
-
-
-
   const { width } = Dimensions.get("window");
-const ITEM_WIDTH = width * 0.8;
-const ITEM_HEIGHT = ITEM_WIDTH * 1.2;
-const SPACING = 20;
+  const ITEM_WIDTH = width * 1.0;
+  const ITEM_HEIGHT = ITEM_WIDTH * 2.7;
 
-  const places= [
+  const places = [
     {
       id: "Museu do Prado",
       source: require("../images/Europa/espanha1.jpg"),
@@ -72,7 +36,7 @@ const SPACING = 20;
     {
       id: "Plaza da España",
       source: require("../images/Europa/espanha4.jpg"),
-      title: "Plaza de España",
+      title: "Plaza de Espanha",
     },
     {
       id: "Museu Guggenheim Bilbao",
@@ -80,54 +44,6 @@ const SPACING = 20;
       title: "Museu Guggenheim Bilbao",
     },
   ];
-
-
-    const scaleAnim = useRef(new Animated.Value(0)).current;
-  const bgOpacityAnim = useRef(new Animated.Value(0)).current;
-  const itemAnimations = places.map(
-    () => useRef(new Animated.Value(0)).current
-  );
-
-  useEffect(() => {
-    // Primeiro, anima a opacidade da imagem de fundo
-    Animated.timing(bgOpacityAnim, {
-      toValue: 1,
-      duration: 1,
-      useNativeDriver: true,
-    }).start(() => {
-      // Depois que a imagem de fundo aparecer, começa a animação de escala
-      Animated.timing(scaleAnim, {
-        toValue: 1,
-        duration: 100,
-        useNativeDriver: true,
-      }).start(() => {
-        // Após a escala, anima os itens do FlatList um de cada vez
-        itemAnimations.forEach((anim, index) => {
-          Animated.timing(anim, {
-            toValue: 1,
-            duration: 300,
-            delay: index * 100, // Cada item com um atraso
-            useNativeDriver: true,
-          }).start();
-        });
-      });
-    });
-  }, []);
-
-
-
-
-
-  const [visible, setVisible] = useState(false);
-
-  visModal = (vis) => {
-    if (!visible) {
-      setVisible(vis);
-    } else {
-      setVisible(vis);
-    }
-  };
- 
 
   useEffect(() => {
     const getDescription = async () => {
@@ -149,6 +65,13 @@ const SPACING = 20;
     }
   }, [id]);
 
+  const renderItem = ({ item }) => (
+    <View style={{ width: ITEM_WIDTH, height: ITEM_HEIGHT,  }}>
+      <ImageBackground source={item.source} style={{ flex: 1 }} resizeMode="cover">
+      </ImageBackground>
+    </View>
+  );
+
   if (loading) {
     return <ActivityIndicator size="large" color="#0000ff" />;
   }
@@ -158,67 +81,39 @@ const SPACING = 20;
   }
 
   return (
-      <View style={stylesDescricao.container}>
-        
-    <ImageBackground
-    style={{height:'100%', width:'100%', justifyContent:'flex-end'}}
-    source={require("../images/Europa/italia.jpg")} blurRadius={ blur ? 10 : 0}>
-      <TouchableOpacity onPress={() => navigation.navigate("Home")}>
-          <MaterialCommunityIcons name="arrow-left" size={35} color={"white"} />
-        </TouchableOpacity>
+    <View style={stylesDescricao.container}>
+      <FlatList
+        data={places}
+        renderItem={renderItem}
+        keyExtractor={item => item.id}
+        horizontal // Enable horizontal scrolling
+        showsHorizontalScrollIndicator={false} // Hide the horizontal scrollbar
+        contentContainerStyle={{ paddingVertical: 20 }} // Add vertical padding
+      />
       
-      
-      <View style={{ justifyContent: "flex-end", alignItems: "center"}}>
-      <TouchableOpacity  onPress={() => {visModal(true);
-        animatedView();
-      }} style={{}}>
-      <MaterialCommunityIcons
-                        name="arrow-up-circle-outline"
-                        size={40}
-                        color="black"
-                      />
-                      
+      <TouchableOpacity onPress={() => navigation.navigate("Home")} style={{ position: 'absolute', top: 40, left: 20 }}>
+        <MaterialCommunityIcons name="arrow-left" size={35} color={"white"} />
       </TouchableOpacity>
       
-      
-      <Modal transparent={true} animationType="fade" visible={visible} style={{backgroundColor: "red", }}>
-      <TouchableOpacity onPress={() => {visModal(false);  FecharAnimaçao();} } >
-      <Text>fechar modal</Text>
+      <TouchableOpacity onPress={() => setVisible(true)} style={{ position: 'absolute', bottom: 40, right: 20 }}>
+        <MaterialCommunityIcons name="arrow-up-circle-outline" size={40} color="black" />
       </TouchableOpacity>
-      
-      <Animated.View
-        style={{
-          transform: [{ translateY: aparecerView}],
-          position: 'absolute',  
-          bottom: 0,  
-          height: "50%",
-          width: "100%",
-          backgroundColor: "white",
-          borderTopLeftRadius: 25,
-          borderTopRightRadius: 25,
-          padding: 7,
-        }}
-      >
-        <ScrollView>
-        <Text style={stylesDescricao.texto}>{description.title}</Text>
-          <Text style={stylesDescricao.texto2}>{description.country}</Text>
-          <Text style={stylesDescricao.texto2}>{description.continent}</Text>
-       
-      <Text style={stylesDescricao.texto3}>{description.description}</Text>
 
-      </ScrollView>
-      </Animated.View>
-      
-      
-      
+      <Modal transparent={true} animationType="fade" visible={visible}>
+        <TouchableOpacity onPress={() => setVisible(false)}>
+          <Text style={{ color: 'black', padding: 20 }}>Fechar modal</Text>
+        </TouchableOpacity>
+        
+        <View style={{ position: 'absolute', bottom: 0, height: "50%", width: "100%", backgroundColor: "white", borderTopLeftRadius: 25, borderTopRightRadius: 25, padding: 7 }}>
+          <ScrollView>
+            <Text style={stylesDescricao.texto}>{description.title}</Text>
+            <Text style={stylesDescricao.texto2}>{description.country}</Text>
+            <Text style={stylesDescricao.texto2}>{description.continent}</Text>
+            <Text style={stylesDescricao.texto3}>{description.description}</Text>
+          </ScrollView>
+        </View>
       </Modal>
-      
-      </View>
-      
-      
-      </ImageBackground>
     </View>
-    
   );
 }
 
