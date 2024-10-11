@@ -40,9 +40,9 @@ const SPACING = 20;
       title: "Terra do Fogo",
     },
     {
-      id: "Moai States",
-      source: require("../../../images/imagesAmericaSul/chile4.jpg"),
-      title: "Moai States",
+      id: "Museu Nacional de Belas Artes",
+      source: require("../../../images/imagesAmericaSul/chile4.jpg"),//
+      title: "Museu Nacional de Belas Artes",
     },
     {
       id: "Ilha De Pascoa",

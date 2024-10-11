@@ -25,9 +25,9 @@ const SPACING = 20;
 
   const places= [
     {
-      id: "Lapoza Verde",
-      source: require("../../../images/imagesAmericaSul/bolivia1.jpg"),
-      title: "Lapoza Verde",
+      id: "Plaza 24 de Septiembre", 
+      source: require("../../../images/imagesAmericaSul/bolivia1.jpg"), //
+      title: "Plaza 24 de Septiembre",
     },
     {
       id: "Laguna Colorada",

@@ -45,9 +45,9 @@ const SPACING = 20;
       title: "Cemitério da Recoleta",
     },
     {
-      id: "Parque Termal Cacheuta",
-      source: require("../../../images/imagesAmericaSul/argentina5.jpg"),
-      title: "Parque Termal Cacheuta",
+      id: "Palácio Barolo",
+      source: require("../../../images/imagesAmericaSul/argentina5.jpg"), //
+      title: "Palácio Barolo",
     },
   ];
 
