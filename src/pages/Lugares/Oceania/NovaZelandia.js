@@ -25,9 +25,9 @@ const SPACING = 20;
 
 const places = [
   {
-    id: "MuseuTe Papa Tongarewa",
+    id: "Museu Te Papa Tongarewa",
     source: require("../../../images/Oceania/zelandia1.jpg"),
-    title: "MuseuTe Papa Tongarewa",
+    title: "Museu Te Papa Tongarewa",
   },
   {
     id: "Hobbiton Movie Set",

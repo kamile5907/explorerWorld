@@ -40,9 +40,9 @@ const places = [
     title: "Vilu War Museum",
   },
   {
-    id: "Kennedy Island", 
+    id: "Tenaru Falls", 
     source: require("../../../images/Oceania/salomao4.jpg"),
-    title: "Kennedy Island",
+    title: "Tenaru Falls",
   },
 ];
 

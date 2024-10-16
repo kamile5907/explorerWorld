@@ -6,7 +6,7 @@ import stylesDescricao from "../styles/StyleDescricao";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
 function DescricaoPage({ route }) {
-  const { id } = route.params;  
+  const { id, carousel } = route.params;  
   const [description, setDescription] = useState(null);
   const [loading, setLoading] = useState(true);
   const [visible, setVisible] = useState(false);
@@ -20,33 +20,7 @@ function DescricaoPage({ route }) {
   const scrollX = useRef(new Animated.Value(0)).current;
   const flatListRef = useRef(null);  // Referência para o FlatList
 
-  const places = [
-    {
-      id: "Museu do Prado",
-      source: require("../images/Europa/espanha1.jpg"),
-      title: "Museu do Prado",
-    },
-    {
-      id: "Cidade das Artes e das Ciências",
-      source: require("../images/Europa/espanha2.jpg"),
-      title: "Cidade das Artes e das Ciências",
-    },
-    {
-      id: "Catedral de Santiago de Compostela",
-      source: require("../images/Europa/espanha3.jpg"),
-      title: "Catedral de Santiago de Compostela",
-    },
-    {
-      id: "Plaza da España",
-      source: require("../images/Europa/espanha4.jpg"),
-      title: "Plaza de Espanha",
-    },
-    {
-      id: "Museu Guggenheim Bilbao",
-      source: require("../images/Europa/espanha5.jpg"),
-      title: "Museu Guggenheim Bilbao",
-    },
-  ];
+  const places = [{carousel}];
 
   useEffect(() => {
     const getDescription = async () => {
@@ -130,17 +104,20 @@ function DescricaoPage({ route }) {
         snapToAlignment="center"  // Alinha o item no centro
       />
       
-      <TouchableOpacity onPress={() => navigation.navigate("Grecia")} style={{ position: 'absolute', top: 40, left: 20 }}>
+      <TouchableOpacity onPress={() => navigation.goBack()} style={{ position: 'absolute', top: 40, left: 20 }}>
         <MaterialCommunityIcons name="arrow-left" size={35} color={"white"} />
       </TouchableOpacity>
       
-      <TouchableOpacity onPress={() => setVisible(true)} style={{ position: 'absolute', bottom: 40, right: 20 }}>
-        <MaterialCommunityIcons name="arrow-up-circle-outline" size={40} color="black" />
+      <TouchableOpacity onPress={() => setVisible(true)} style={{bottom: 30, alignItems: "center", position: "absolute" }}>
+        <MaterialCommunityIcons name="text-box-outline" size={50} color="black" />
+        <Text style={{fontSize: 25, fontWeight: "bold", color: "red"}}>Descrição</Text>
       </TouchableOpacity>
+      
 
-      <Modal transparent={true} animationType="fade" visible={visible}>
-        <TouchableOpacity onPress={() => setVisible(false)}>
-          <Text style={{ color: 'black', padding: 20,  }}>Fechar modal</Text>
+
+      <Modal transparent={true} animationType="slide" visible={visible}>
+        <TouchableOpacity onPress={() => setVisible(false)} style={{position: 'absolute', top: 40, left: 20}}>
+        <MaterialCommunityIcons name="arrow-left" size={35} color="black" />
         </TouchableOpacity>
         
         <View style={{ position: 'absolute', bottom: 0, height: "50%", width: "100%", backgroundColor: "white", borderTopLeftRadius: 25, borderTopRightRadius: 25, padding: 7 }}>

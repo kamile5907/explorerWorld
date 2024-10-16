@@ -25,9 +25,9 @@ const SPACING = 20;
 
   const places= [
     {
-      id: "Museu de Costa Rica",
-      source: require("../../../images/imagesAmericaCentro/costa1.jpg"),
-      title: "Museu de Costa Rica",
+      id: "Teatro Nacional da Costa Rica",
+      source: require("../../../images/imagesAmericaCentro/costa1.jpg"), //
+      title: "Teatro Nacional da Costa Rica",
     },
     {
       id: "Playa Hermosa",
@@ -40,9 +40,9 @@ const SPACING = 20;
       title: "Rio Celeste",
     },
     {
-      id: "Mentatrail",
-      source: require("../../../images/imagesAmericaCentro/costa4.jpg"),
-      title: "Mentatrail",
+      id: "Reserva Florestal Monteverde Cloud",
+      source: require("../../../images/imagesAmericaCentro/costa4.jpg"),//
+      title: "Reserva Florestal Monteverde Cloud ",
     },
     {
       id: "Parque Nacional Volcán Poás",
