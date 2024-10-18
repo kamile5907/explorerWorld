@@ -23,33 +23,63 @@ const ITEM_WIDTH = width * 0.8;
 const ITEM_HEIGHT = ITEM_WIDTH * 1.2;
 const SPACING = 20;
 
-  const places= [
-    {
-      id: "Albert Dock",
-      source: require("../../../images/Europa/inglaterra1.jpg"),
-      title: "Albert Dock",
-    },
-    {
-      id: "Tower Bridge",
-      source: require("../../../images/Europa/inglaterra2.jpg"),
-      title: "Tower Bridge",
-    },
-    {
-      id: "Palácio de Buckingham",
-      source: require("../../../images/Europa/inglaterra3.jpg"),
-      title: "Palácio de Buckingham",
-    },
-    {
-      id: "Big Ben",
-      source: require("../../../images/Europa/inglaterra4.jpg"),
-      title: "Big Ben",
-    },
-    {
-      id: "Catedral de São Paulo",
-      source: require("../../../images/Europa/inglaterra5.jpg"),
-      title: "Catedral de São Paulo",
-    },
-  ];
+const places= [
+  {
+    id: "Albert Dock",
+    source: require("../../../images/Europa/inglaterra1.jpg"),
+    title: "Albert Dock",
+    carousel: [
+    {img: require("../../../images/Europa/albert1.jpg")},
+    {img: require("../../../images/Europa/albert2.jpg")},
+    {img: require("../../../images/Europa/albert3.jpg")},
+    {img: require("../../../images/Europa/albert4.jpg")},
+ ] },
+  {
+    id: "Tower Bridge",
+    source: require("../../../images/Europa/inglaterra2.jpg"),
+    title: "Tower Bridge",
+    carousel: [
+      {img: require("../../../images/Europa/tower1.jpg")},
+      {img: require("../../../images/Europa/tower2.jpg")},
+      {img: require("../../../images/Europa/tower3.jpg")},
+      {img: require("../../../images/Europa/tower4.jpg")},
+    ]
+  },
+  {
+    id: "Palácio de Buckingham",
+    source: require("../../../images/Europa/inglaterra3.jpg"),
+    title: "Palácio de Buckingham",
+    carousel: [
+      {img: require("../../../images/Europa/palacio1.jpg")},
+      {img: require("../../../images/Europa/palacio2.jpg")},
+      {img: require("../../../images/Europa/palacio3.jpg")},
+      {img: require("../../../images/Europa/palacio4.jpg")},
+    ]
+  },
+  {
+    id: "Big Ben",
+    source: require("../../../images/Europa/inglaterra4.jpg"),
+    title: "Big Ben",
+    carousel: [
+      {img: require("../../../images/Europa/bigben1.jpg")},
+      {img: require("../../../images/Europa/bigben2.jpg")},
+      {img: require("../../../images/Europa/bigben3.jpg")},
+      {img: require("../../../images/Europa/bigben4.jpg")},
+    ]
+  },
+  {
+   
+    id: "Catedral de São Paulo",
+    source: require("../../../images/Europa/inglaterra5.jpg"),
+    title: "Catedral de São Paulo",
+    carousel: [
+      {img: require("../../../images/Europa/saopaulo1.jpg")},
+      {img: require("../../../images/Europa/saopaulo2.jpg")},
+      {img: require("../../../images/Europa/saopaulo3.jpg")},
+      {img: require("../../../images/Europa/saopaulo4.jpg")},
+    ]
+  },
+];
 
 const Carousel = () => {
   const scrollX = useRef(new Animated.Value(0)).current;
@@ -117,7 +147,7 @@ const Carousel = () => {
        blurRadius={5}>
     
     <TouchableOpacity
-                onPress={() => navigation.navigate("Europa")}
+                onPress={() => navigation.goBack()}
                 style={{
                   alignItems: "center",
                   justifyContent: "flex-start",
@@ -180,7 +210,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

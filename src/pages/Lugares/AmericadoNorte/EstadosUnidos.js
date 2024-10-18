@@ -28,31 +28,56 @@ const SPACING = 20;
       id: "Central Park",
       source: require("../../../images/imagesAmericaNorte/estadosunidos1.jpg"),
       title: "Central Park",
-      image: require("../../../images/imagesAmericaNorte/estadosunidos1.jpg"),
+      carousel: [
+        {img: require("../../../images/imagesAmericaNorte/centralpark5.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/centralpark4.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/centralpark6.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/centralpark7.jpg")},
+     ]
     },
     {
       id: "Estátua Da Liberdade",
       source: require("../../../images/imagesAmericaNorte/estadosunidos2.jpg"),
       title: "Estátua da Liberdade",
-      image: require("../../../images/imagesAmericaNorte/estadosunidos2.jpg"),
+      carousel: [
+        {img: require("../../../images/imagesAmericaNorte/estatualiberdade4.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/estatualiberdade5.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/estatualiberdade6.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/estatualiberdade7.jpg")},
+     ]
     },
     {
       id: "Ponte Golden Gate",
       source: require("../../../images/imagesAmericaNorte/estadosunidos3.jpg"),
       title: "Ponte Golden Gate",
-      image: require("../../../images/imagesAmericaNorte/estadosunidos3.jpg"),
+      carousel: [
+        {img: require("../../../images/imagesAmericaNorte/pontegolden4.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/pontegolden5.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/pontegolden6.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/pontegolden7.jpg")},
+     ]
     },
     {
       id: "Times Square",
       source: require("../../../images/imagesAmericaNorte/estadosunidos4.jpg"),
       title: "Times Square",
-      image: require("../../../images/imagesAmericaNorte/estadosunidos4.jpg"),
+      carousel: [
+        {img: require("../../../images/imagesAmericaNorte/timesquare4.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/timesquare5.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/timesquare6.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/timesquare7.jpg")},
+     ]
     },
     {
       id: "Walt Disney World Resort",
       source: require("../../../images/imagesAmericaNorte/estadosunidos5.jpg"),
       title: "Walt Disney World Resort",
-      image: require("../../../images/imagesAmericaNorte/estadosunidos5.jpg"),
+      carousel: [
+        {img: require("../../../images/imagesAmericaNorte/disney4.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/disney5.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/disney6.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/disney7.jpg")},
+     ]
     },
   ];
 
@@ -185,7 +210,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, image: item.image })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

@@ -23,33 +23,63 @@ const ITEM_WIDTH = width * 0.8;
 const ITEM_HEIGHT = ITEM_WIDTH * 1.2;
 const SPACING = 20;
 
-  const places= [
-    {
-      id: "National Museum of Qatar",
+const places= [
+  {
+    id: "National Museum of Qatar",
       source: require("../../../images/Asia/catar1.jpg"),
       title: "National Museum of Qatar",
-    },
-    {
-      id: "Villagio Mall",
+    carousel: [
+    {img: require("../../../images/Asia/national1.jpg")},
+    {img: require("../../../images/Asia/national2.jpg")},
+    {img: require("../../../images/Asia/national3.jpg")},
+    {img: require("../../../images/Asia/national4.jpg")},
+ ] },
+  {
+    id: "Villagio Mall",
       source: require("../../../images/Asia/catar2.jpg"),
       title: "Villaggio Mall",
-    },
-    {
-      id: "Qatar national library",
+    carousel: [
+      {img: require("../../../images/Asia/villaggio1.jpg")},
+      {img: require("../../../images/Asia/villaggio2.jpg")},
+      {img: require("../../../images/Asia/villaggio3.jpg")},
+      {img: require("../../../images/Asia/villaggio4.jpg")},
+    ]
+  },
+  {
+    id: "Qatar national library",
       source: require("../../../images/Asia/catar3.jpg"),
       title: "Qatar National Library",
-    },
-    {
-      id: "Sealine Beach Mesaieed",
+    carousel: [
+      {img: require("../../../images/Asia/arashiyama1.jpg")},
+      {img: require("../../../images/Asia/arashiyama2.jpg")},
+      {img: require("../../../images/Asia/arashiyama3.jpg")},
+      {img: require("../../../images/Asia/arashiyama4.jpg")},
+    ]
+  },
+  {
+    id: "Sealine Beach Mesaieed",
       source: require("../../../images/Asia/catar4.jpg"),
       title: "Sealine Beach, Mesaieed",
-    },
-    {
-      id: "Lusail Winter Wonderland",
+    carousel: [
+      {img: require("../../../images/Asia/gyoen1.jpg")},
+      {img: require("../../../images/Asia/gyoen2.jpg")},
+      {img: require("../../../images/Asia/gyoen3.jpg")},
+      {img: require("../../../images/Asia/gyoen4.jpg")},
+    ]
+  },
+  {
+   
+    id: "Lusail Winter Wonderland",
       source: require("../../../images/Asia/catar5.jpg"),
       title: "Lusail Winter Wonderland",
-    },
-  ];
+    carousel: [
+      {img: require("../../../images/Asia/ghibli1.jpg")},
+      {img: require("../../../images/Asia/ghibli2.jpg")},
+      {img: require("../../../images/Asia/ghibli3.jpg")},
+      {img: require("../../../images/Asia/ghibli4.jpg")},
+    ]
+  },
+];
 
 const Carousel = () => {
   const scrollX = useRef(new Animated.Value(0)).current;
@@ -180,7 +210,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

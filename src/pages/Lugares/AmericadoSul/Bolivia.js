@@ -28,26 +28,56 @@ const SPACING = 20;
       id: "Plaza 24 de Septiembre", 
       source: require("../../../images/imagesAmericaSul/bolivia1.jpg"), //
       title: "Plaza 24 de Septiembre",
+      carousel: [
+        {img: require("../../../images/imagesAmericaSul/septiembre4.jpg")},
+        {img: require("../../../images/imagesAmericaSul/septiembre2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/septiembre3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/septiembre1.jpg")},
+     ]
     },
     {
       id: "Laguna Colorada",
       source: require("../../../images/imagesAmericaSul/bolivia2.jpg"),
       title: "Laguna Colorada",
+      carousel: [
+        {img: require("../../../images/imagesAmericaSul/Laguna1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/laguna2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/laguna3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/laguna4.jpg")},
+     ]
     },
     {
       id: "Isla Incahuasi",
       source: require("../../../images/imagesAmericaSul/bolivia3.jpg"),
       title: "Isla Incahuasi",
+      carousel: [
+        {img: require("../../../images/imagesAmericaSul/incahuasi1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/incahuasi2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/incahuasi3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/incahuasi4.jpg")},
+     ]
     },
     {
       id: "Valle de La Luna",
       source: require("../../../images/imagesAmericaSul/bolivia4.jpg"),
       title: "Valle de La Luna",
+      carousel: [
+        {img: require("../../../images/imagesAmericaSul/valle1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/valle2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/valle3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/valle4.jpg")},
+     ]
     },
     {
       id: "Isla Del Sol",
       source: require("../../../images/imagesAmericaSul/bolivia5.jpg"),
       title: "Isla Del Sol",
+      carousel: [
+        {img: require("../../../images/imagesAmericaSul/isladelsol1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/isladelsol2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/isladelsol3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/isladelsol4.jpg")},
+     ]
     },
   ];
 
@@ -180,7 +210,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

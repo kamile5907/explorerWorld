@@ -28,26 +28,56 @@ const SPACING = 20;
       id: "Teatro Colón",
       source: require("../../../images/imagesAmericaSul/argentina1.jpg"),
       title: "Teatro Colón",
+      carousel: [
+        {img: require("../../../images/imagesAmericaSul/teatrocolon1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/teatrocolon2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/teatrocolon3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/teatrocolon4.jpg")},
+     ]
     },
     {
       id: "Mar Del Plata",
       source: require("../../../images/imagesAmericaSul/argentina2.jpg"),
       title: "Mar Del Plata",
+      carousel: [
+        {img: require("../../../images/imagesAmericaSul/mardelplata1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/mardelplata2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/mardelplata3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/mardelplata4.jpg")},
+     ]
     },
     {
       id: "Glaciar Perito Moreno",
       source: require("../../../images/imagesAmericaSul/argentina3.jpg"),
       title: "Glaciar Perito Moreno",
+      carousel: [
+        {img: require("../../../images/imagesAmericaSul/glaciar1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/glaciar2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/glaciar3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/glaciar4.jpg")},
+     ]
     },
     {
       id: "Cemitério da Recoleta",
       source: require("../../../images/imagesAmericaSul/argentina4.jpg"),
       title: "Cemitério da Recoleta",
+      carousel: [
+        {img: require("../../../images/imagesAmericaSul/recoleta1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/recoleta2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/recoleta3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/recoleta4.jpg")},
+     ]
     },
     {
       id: "Palácio Barolo",
       source: require("../../../images/imagesAmericaSul/argentina5.jpg"), //
       title: "Palácio Barolo",
+      carousel: [
+        {img: require("../../../images/imagesAmericaSul/palacioBarolo1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/Barolo2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/barolo3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/barolo4.jpg")},
+     ]
     },
   ];
 
@@ -180,7 +210,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

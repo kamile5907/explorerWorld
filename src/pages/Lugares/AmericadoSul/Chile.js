@@ -28,26 +28,56 @@ const SPACING = 20;
       id: "Valle Nevado",
       source: require("../../../images/imagesAmericaSul/chile1.jpg"),
       title: "Valle Nevado",
+      carousel: [
+        {img: require("../../../images/imagesAmericaSul/vallenevado1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/vallenevado2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/vallenevado.jpg")},
+        {img: require("../../../images/imagesAmericaSul/vallenevado4.jpg")},
+     ]
     },
     {
       id: "Torres Del Paine",
       source: require("../../../images/imagesAmericaSul/chile2.jpg"),
       title: "Torres Del Paine",
+      carousel: [
+        {img: require("../../../images/imagesAmericaSul/torresdelpaine1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/torresdelpaine2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/torresdelpaine3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/torresdelpaine4.jpg")},
+     ]
     },
     {
       id: "Terra do Fogo",
       source: require("../../../images/imagesAmericaSul/chile3.jpg"),
       title: "Terra do Fogo",
+      carousel: [
+        {img: require("../../../images/imagesAmericaSul/terraldofogo1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/terradofogo4.jpg")},
+        {img: require("../../../images/imagesAmericaSul/terradofogo3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/terradelfogo.jpg")},
+     ]
     },
     {
       id: "Museu Nacional de Belas Artes",
       source: require("../../../images/imagesAmericaSul/chile4.jpg"),//
       title: "Museu Nacional de Belas Artes",
+      carousel: [
+        {img: require("../../../images/imagesAmericaSul/belasartes2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/belasartes3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/musebelasartes.jpg")},
+        {img: require("../../../images/imagesAmericaSul/belasartes4.jpg")},
+     ]
     },
     {
       id: "Ilha De Pascoa",
       source: require("../../../images/imagesAmericaSul/chile5.jpg"),
       title: "Ilha De Pascoa",
+      carousel: [
+        {img: require("../../../images/imagesAmericaSul/ilhadepascoa1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/ilhadepascoa2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/ilhadepascoa3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/ilhadepascoa4.jpg")},
+     ]
     },
   ];
 
@@ -180,7 +210,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

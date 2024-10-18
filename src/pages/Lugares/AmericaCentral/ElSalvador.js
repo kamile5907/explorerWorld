@@ -28,26 +28,56 @@ const SPACING = 20;
       id: "Santa Ana Volcano",
       source: require("../../../images/imagesAmericaCentro/elsalvador1.jpg"),
       title: "Santa Ana Volcano",
+      carousel: [
+        {img: require("../../../images/imagesAmericaCentro/santaanaVolcano1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/santaanavolcano2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/santaanavolcano3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/santaanavolcano4.jpg")},
+     ]
     },
     {
       id: "Lago de Coate Peque",
       source: require("../../../images/imagesAmericaCentro/elsalvador2.jpg"),
       title: "Lago De Coate Peque",
+      carousel: [
+        {img: require("../../../images/imagesAmericaCentro/coatepeque1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/coatepeque2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/coatepeque3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/coatepeque4.jpg")},
+     ]
     },
     {
       id: "Joya de Ceren",
       source: require("../../../images/imagesAmericaCentro/elsalvador3.jpg"),
       title: "Joya De Ceren",
+      carousel: [
+        {img: require("../../../images/imagesAmericaCentro/joyadeceren1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/joyadeceren2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/joyadeceren3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/joyadeceren4.jpg")},
+     ]
     },
     {
       id: "Cuevas de Moncagua",
       source: require("../../../images/imagesAmericaCentro/elsalvador4.jpg"),
       title: "Cuevas De Moncagua",
+      carousel: [
+        {img: require("../../../images/imagesAmericaCentro/moncagua1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/moncagua2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/moncagua3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/moncagua4.jpg")},
+     ]
     },
     {
       id: "Tazumal",
       source: require("../../../images/imagesAmericaCentro/elsalvador5.jpg"),
       title: "Tazumal",
+      carousel: [
+        {img: require("../../../images/imagesAmericaCentro/tazumal1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/tazumal2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/tazumal3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/tazumal4.jpg")},
+     ]
     },
   ];
 
@@ -180,7 +210,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

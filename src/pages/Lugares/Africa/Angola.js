@@ -28,22 +28,46 @@ const places = [
     id: "Luanda",
     source: require("../../../images/Africa/angola1.jpg"),
     title: "Luanda",
+    carousel: [
+      {img: require("../../../images/Asia/muralha1.jpg")},
+      {img: require("../../../images/Asia/muralha2.jpg")},
+      {img: require("../../../images/Asia/muralha3.jpg")},
+      {img: require("../../../images/Asia/muralha4.jpg")},
+   ]
   },
  
   {
     id: "Huambo",
     source: require("../../../images/Africa/angola2.jpg"),
     title: "Huambo",
+    carousel: [
+      {img: require("../../../images/Asia/muralha1.jpg")},
+      {img: require("../../../images/Asia/muralha2.jpg")},
+      {img: require("../../../images/Asia/muralha3.jpg")},
+      {img: require("../../../images/Asia/muralha4.jpg")},
+   ]
   },
   {
     id: "Ile Kassa",
     source: require("../../../images/Africa/angola3.jpg"),
     title: "Ile Kassa", 
+    carousel: [
+      {img: require("../../../images/Asia/muralha1.jpg")},
+      {img: require("../../../images/Asia/muralha2.jpg")},
+      {img: require("../../../images/Asia/muralha3.jpg")},
+      {img: require("../../../images/Asia/muralha4.jpg")},
+   ]
   },
   {
     id: "Praia da Caotinha",
     source: require("../../../images/Africa/angola4.jpg"),
     title: "Praia da Caotinha",
+    carousel: [
+      {img: require("../../../images/Asia/muralha1.jpg")},
+      {img: require("../../../images/Asia/muralha2.jpg")},
+      {img: require("../../../images/Asia/muralha3.jpg")},
+      {img: require("../../../images/Asia/muralha4.jpg")},
+   ]
   },
   
 ];
@@ -178,7 +202,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

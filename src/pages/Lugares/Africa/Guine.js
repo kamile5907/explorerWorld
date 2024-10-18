@@ -28,21 +28,45 @@ const places = [
     id: "Bissao Île de Kéréen",
     source: require("../../../images/Africa/guine1.jpg"),
     title: "Bissao Île de Kéréen",
+    carousel: [
+      {img: require("../../../images/Asia/muralha1.jpg")},
+      {img: require("../../../images/Asia/muralha2.jpg")},
+      {img: require("../../../images/Asia/muralha3.jpg")},
+      {img: require("../../../images/Asia/muralha4.jpg")},
+   ]
   },
   {
     id: "Guime le voile de la mariee ",
     source: require("../../../images/Africa/guine2.jpg"),
     title: "Guime le voile de la mariee ",
+    carousel: [
+      {img: require("../../../images/Asia/muralha1.jpg")},
+      {img: require("../../../images/Asia/muralha2.jpg")},
+      {img: require("../../../images/Asia/muralha3.jpg")},
+      {img: require("../../../images/Asia/muralha4.jpg")},
+   ]
   },
   {
     id: "Mount Nimba Strict Nature Reserve",
     source: require("../../../images/Africa/guine3.jpg"),
     title: "Mount Nimba Strict Nature Reserve",
+    carousel: [
+      {img: require("../../../images/Asia/muralha1.jpg")},
+      {img: require("../../../images/Asia/muralha2.jpg")},
+      {img: require("../../../images/Asia/muralha3.jpg")},
+      {img: require("../../../images/Asia/muralha4.jpg")},
+   ]
   },
   {
     id: "Ile Kassa",
     source: require("../../../images/Africa/guine4.jpg"),
     title: "Ile Kassa", 
+    carousel: [
+      {img: require("../../../images/Asia/muralha1.jpg")},
+      {img: require("../../../images/Asia/muralha2.jpg")},
+      {img: require("../../../images/Asia/muralha3.jpg")},
+      {img: require("../../../images/Asia/muralha4.jpg")},
+   ]
   },
 ];
 
@@ -175,7 +199,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

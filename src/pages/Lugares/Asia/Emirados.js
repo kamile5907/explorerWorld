@@ -23,33 +23,63 @@ const ITEM_WIDTH = width * 0.8;
 const ITEM_HEIGHT = ITEM_WIDTH * 1.2;
 const SPACING = 20;
 
-  const places= [
-    {
-      id: "Burj Khalifa",
+const places= [
+  {
+    id: "Burj Khalifa",
       source: require("../../../images/Asia/emirados1.jpg"),
       title: "Burj Khalifa",
-    },
-    {
-      id: "Aquaventure Waterpark",
+    carousel: [
+    {img: require("../../../images/Asia/burj1.jpg")},
+    {img: require("../../../images/Asia/burj2.jpg")},
+    {img: require("../../../images/Asia/burj3.jpg")},
+    {img: require("../../../images/Asia/burj4.jpg")},
+ ] },
+  {
+    id: "Aquaventure Waterpark",
       source: require("../../../images/Asia/emirados2.jpg"),
       title: "Aquaventure Waterpark",
-    },
-    {
-      id: "Ferrari World",
+    carousel: [
+      {img: require("../../../images/Asia/park1.jpg")},
+      {img: require("../../../images/Asia/park2.jpg")},
+      {img: require("../../../images/Asia/park3.jpg")},
+      {img: require("../../../images/Asia/park4.jpg")},
+    ]
+  },
+  {
+    id: "Ferrari World",
       source: require("../../../images/Asia/emirados3.jpg"),
       title: "Ferrari World",
-    },
-    {
-      id: "Museu of the future",
+    carousel: [
+      {img: require("../../../images/Asia/ferrari1.jpg")},
+      {img: require("../../../images/Asia/ferrari2.jpg")},
+      {img: require("../../../images/Asia/ferrari3.jpg")},
+      {img: require("../../../images/Asia/ferrari4.jpg")},
+    ]
+  },
+  {
+    id: "Museu of the future",
       source: require("../../../images/Asia/emirados4.jpg"),
       title: "Museum of The Future",
-    },
-    {
-      id: "Dubai aquarium",
+    carousel: [
+      {img: require("../../../images/Asia/future1.jpg")},
+      {img: require("../../../images/Asia/future2.jpg")},
+      {img: require("../../../images/Asia/future3.jpg")},
+      {img: require("../../../images/Asia/future4.jpg")},
+    ]
+  },
+  {
+   
+    id: "Dubai aquarium",
       source: require("../../../images/Asia/emirados5.jpg"),
       title: "Dubai Aquarium & Underwater Zoo",
-    },
-  ];
+    carousel: [
+      {img: require("../../../images/Asia/aquarium1.jpg")},
+      {img: require("../../../images/Asia/aquarium2.jpg")},
+      {img: require("../../../images/Asia/aquarium3.jpg")},
+      {img: require("../../../images/Asia/aquarium4.jpg")},
+    ]
+  },
+];
 
 const Carousel = () => {
   const scrollX = useRef(new Animated.Value(0)).current;
@@ -180,7 +210,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

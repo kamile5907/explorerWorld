@@ -28,26 +28,56 @@ const SPACING = 20;
       id: "Cayos Cochinos",
       source: require("../../../images/imagesAmericaCentro/honduras1.jpg"),
       title: "Cayos Cochinos",
+      carousel: [
+        {img: require("../../../images/imagesAmericaCentro/cochinos1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/cochinos2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/cochinos3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/cochinos4.jpg")},
+     ]
     },
     {
       id: "Guinope",
       source: require("../../../images/imagesAmericaCentro/honduras2.jpg"),
       title: "Guinope",
+      carousel: [
+        {img: require("../../../images/imagesAmericaCentro/guinope1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/guinope2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/guinope3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/guinope4.jpg")},
+     ]
     },
     {
       id: "Lago de Yojoa",
       source: require("../../../images/imagesAmericaCentro/honduras3.jpg"),
       title: "Lago de Yojoa",
+      carousel: [
+        {img: require("../../../images/imagesAmericaCentro/yojoa1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/yojoa2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/yojoa3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/yojoa4.jpg")},
+     ]
     },
     {
       id: "Gumbalimba Park",
       source: require("../../../images/imagesAmericaCentro/honduras4.jpg"),
       title: "Gumbalimba Park",
+      carousel: [
+        {img: require("../../../images/imagesAmericaCentro/gumbalimba1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/gumbalimba2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/gumbalimba3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/gumbalimba4.jpg")},
+     ]
     },
     {
       id: "Little French Key",
       source: require("../../../images/imagesAmericaCentro/honduras5.jpg"),
       title: "Little French Key",
+      carousel: [
+        {img: require("../../../images/imagesAmericaCentro/coatepeque1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/coatepeque2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/coatepeque3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/coatepeque4.jpg")},
+     ]
     },
   ];
 
@@ -180,7 +210,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel})}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

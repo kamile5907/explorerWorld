@@ -28,26 +28,56 @@ const SPACING = 20;
       id: "Teatro Nacional da Costa Rica",
       source: require("../../../images/imagesAmericaCentro/costa1.jpg"), //
       title: "Teatro Nacional da Costa Rica",
+      carousel: [
+        {img: require("../../../images/imagesAmericaCentro/teatronacional1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/teatrocostarica2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/teatrocostarica3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/teatrocostarica4.jpg")},
+     ]
     },
     {
       id: "Playa Hermosa",
       source: require("../../../images/imagesAmericaCentro/costa2.jpg"),
       title: "Playa Hermosa",
+      carousel: [
+        {img: require("../../../images/imagesAmericaCentro/playahermosa1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/playahermosa2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/playahermosa3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/playahermosa4.jpg")},
+     ]
     },
     {
       id:"Rio Celeste",
       source: require("../../../images/imagesAmericaCentro/costa3.jpg"),
       title: "Rio Celeste",
+      carousel: [
+        {img: require("../../../images/imagesAmericaCentro/rioceleste1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/rioceleste2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/rioceleste3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/rioceleste4.jpg")},
+     ]
     },
     {
       id: "Reserva Florestal Monteverde Cloud",
       source: require("../../../images/imagesAmericaCentro/costa4.jpg"),//
       title: "Reserva Florestal Monteverde Cloud ",
+      carousel: [
+        {img: require("../../../images/imagesAmericaCentro/montecverdecloud1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/monteverde2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/monteverde3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/monteverde4.jpg")},
+     ]
     },
     {
       id: "Parque Nacional Volcán Poás",
       source: require("../../../images/imagesAmericaCentro/costa5.jpg"),
       title: "Parque Nacional Volcán Poás",
+      carousel: [
+        {img: require("../../../images/imagesAmericaCentro/volcanpoas1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/volcanpoas2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/volcanpoas.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/volcanpoas4.jpg")},
+     ]
     },
   ];
 
@@ -180,7 +210,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel})}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

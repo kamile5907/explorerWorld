@@ -1,4 +1,4 @@
- import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import {
   Text,
   View,
@@ -23,33 +23,63 @@ const ITEM_WIDTH = width * 0.8;
 const ITEM_HEIGHT = ITEM_WIDTH * 1.2;
 const SPACING = 20;
 
-  const places= [
-    {
-      id: "Jardim de Luxemburgo",
-      source: require("../../../images/Europa/frança1.jpg"),
-      title: "Jardim de Luxemburgo",
-    },
-    {
-      id: "Torre Eiffel",
-      source: require("../../../images/Europa/frança3.jpg"),
-      title: "Torre Eiffel",
-    },
-    {
-      id: "Arco do Triunfo",
-      source: require("../../../images/Europa/frança4.jpg"),
-      title: "Arco do Triunfo",
-    },
-    {
-      id: "Museu do Louvre",
-      source: require("../../../images/Europa/frança5.jpg"),
-      title: "Museu do Louvre",
-    },
-    {
-      id: "Disneyland Paris",
-      source: require("../../../images/Europa/frança6.jpg"),
-      title: "Disneyland Paris",
-    },
-  ];
+const places= [
+  {
+    id: "Jardim de Luxemburgo",
+    source: require("../../../images/Europa/frança1.jpg"),
+    title: "Jardim de Luxemburgo",
+    carousel: [
+    {img: require("../../../images/Europa/jardim1.jpg")},
+    {img: require("../../../images/Europa/jardim2.jpg")},
+    {img: require("../../../images/Europa/jardim3.jpg")},
+    {img: require("../../../images/Europa/jardim4.jpg")},
+ ] },
+  {
+    id: "Torre Eiffel",
+    source: require("../../../images/Europa/frança3.jpg"),
+    title: "Torre Eiffel",
+    carousel: [
+      {img: require("../../../images/Europa/torre1.jpg")},
+      {img: require("../../../images/Europa/torre2.jpg")},
+      {img: require("../../../images/Europa/torre3.jpg")},
+      {img: require("../../../images/Europa/torre4.jpg")},
+    ]
+  },
+  {
+    id: "Arco do Triunfo",
+    source: require("../../../images/Europa/frança4.jpg"),
+    title: "Arco do Triunfo",
+    carousel: [
+      {img: require("../../../images/Europa/arco1.jpg")},
+      {img: require("../../../images/Europa/arco2.jpg")},
+      {img: require("../../../images/Europa/arco3.jpg")},
+      {img: require("../../../images/Europa/arco4.jpg")},
+    ]
+  },
+  {
+    id: "Museu do Louvre",
+    source: require("../../../images/Europa/frança5.jpg"),
+    title: "Museu do Louvre",
+    carousel: [
+      {img: require("../../../images/Europa/louvre1.jpg")},
+      {img: require("../../../images/Europa/louvre2.jpg")},
+      {img: require("../../../images/Europa/louvre3.jpg")},
+      {img: require("../../../images/Europa/louvre4.jpg")},
+    ]
+  },
+  {
+   
+    id: "Disneyland Paris",
+    source: require("../../../images/Europa/frança6.jpg"),
+    title: "Disneyland Paris",
+    carousel: [
+      {img: require("../../../images/Europa/disney1.jpg")},
+      {img: require("../../../images/Europa/disney2.jpg")},
+      {img: require("../../../images/Europa/disney3.jpg")},
+      {img: require("../../../images/Europa/disney4.jpg")},
+    ]
+  },
+];
 
 const Carousel = () => {
   const scrollX = useRef(new Animated.Value(0)).current;
@@ -117,7 +147,7 @@ const Carousel = () => {
        blurRadius={5}>
     
     <TouchableOpacity
-                onPress={() => navigation.navigate("Europa")}
+                onPress={() => navigation.goBack()}
                 style={{
                   alignItems: "center",
                   justifyContent: "flex-start",
@@ -180,7 +210,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

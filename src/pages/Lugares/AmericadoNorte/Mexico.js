@@ -28,26 +28,56 @@ const SPACING = 20;
       id: "Chichén Itzá",
       source: require("../../../images/imagesAmericaNorte/mexico1.jpg"),
       title: "Chichén Itzá",
+      carousel: [
+        {img: require("../../../images/imagesAmericaNorte/chichenmexico4.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/chichenmexico5.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/chichenmexico6.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/chichenmexico7.jpg")},
+     ]
     },
     {
-      id: "Parque Eco-arqueológico Xcaret",
+      id: "Xel-Há Museu Nacional de Antropologia",
       source: require("../../../images/imagesAmericaNorte/mexico2.jpg"),
-      title: "Parque Eco-arqueológico Xcaret",
+      title: "Xel-Há Museu Nacional de Antropologia",
+      carousel: [
+        {img: require("../../../images/imagesAmericaNorte/nacionalmexico4.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/nacionalmexico5.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/nacionalmexico6.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/nacionalmexico7.jpg")},
+     ]
     },
     {
       id: "Museu Soumaya",
       source: require("../../../images/imagesAmericaNorte/mexico3.jpg"),
       title: "Museu Soumaya",
+      carousel: [
+        {img: require("../../../images/imagesAmericaNorte/museumexico4.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/museumexico5.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/museumexico6.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/museumexico7.jpg")},
+     ]
     },
     {
       id: "Castelo de Chapultepec",
       source: require("../../../images/imagesAmericaNorte/mexico4.jpg"),
       title: "Castelo de Chapultepec",
+      carousel: [
+        {img: require("../../../images/imagesAmericaNorte/castelomexico4.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/castelomexico5.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/castelomexico6.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/castelomexico7.jpg")},
+     ]
     },
     {
       id: "Zona Arqueológica de Tulum",
       source: require("../../../images/imagesAmericaNorte/mexico5.jpg"),
       title: "Zona Arqueológica de Tulum",
+      carousel: [
+        {img: require("../../../images/imagesAmericaNorte/zonamexico4.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/zonamexico5.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/zonamexico6.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/zonamexico7.jpg")},
+     ]
     },
   ];
 
@@ -180,7 +210,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

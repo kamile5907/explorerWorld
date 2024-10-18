@@ -28,24 +28,47 @@ const places = [
     id: "Suez",
     source: require("../../../images/Africa/egito1.jpg"),
     title: "Suez", 
+    carousel: [
+      {img: require("../../../images/Asia/muralha1.jpg")},
+      {img: require("../../../images/Asia/muralha2.jpg")},
+      {img: require("../../../images/Asia/muralha3.jpg")},
+      {img: require("../../../images/Asia/muralha4.jpg")},
+   ]
   },
  
   {
     id: "DescriptionPage",
     source: require("../../../images/Africa/egito2.jpg"),
     title: "Alexandria",
-    rota: "DescriptionPage"
+    carousel: [
+      {img: require("../../../images/Asia/muralha1.jpg")},
+      {img: require("../../../images/Asia/muralha2.jpg")},
+      {img: require("../../../images/Asia/muralha3.jpg")},
+      {img: require("../../../images/Asia/muralha4.jpg")},
+   ]
   },
   {
     id: "Cairo",
     source: require("../../../images/Africa/egito3.jpg"),
     title: "Cairo",
+    carousel: [
+      {img: require("../../../images/Asia/muralha1.jpg")},
+      {img: require("../../../images/Asia/muralha2.jpg")},
+      {img: require("../../../images/Asia/muralha3.jpg")},
+      {img: require("../../../images/Asia/muralha4.jpg")},
+   ]
   },
   
   {
     id: "Hurghada",
     source: require("../../../images/Africa/egito4.jpg"),
     title: "Hurghada",
+    carousel: [
+      {img: require("../../../images/Asia/muralha1.jpg")},
+      {img: require("../../../images/Asia/muralha2.jpg")},
+      {img: require("../../../images/Asia/muralha3.jpg")},
+      {img: require("../../../images/Asia/muralha4.jpg")},
+   ]
   },
 ];
 
@@ -179,7 +202,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

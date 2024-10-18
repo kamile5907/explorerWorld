@@ -29,22 +29,46 @@ const places = [
     id: "Johnnesburg",
     source: require("../../../images/Africa/africaSul1.jpg"),
     title: "Johnnesburg",
+    carousel: [
+      {img: require("../../../images/Asia/muralha1.jpg")},
+      {img: require("../../../images/Asia/muralha2.jpg")},
+      {img: require("../../../images/Asia/muralha3.jpg")},
+      {img: require("../../../images/Asia/muralha4.jpg")},
+   ]
   },
   
   {
     id: "Kimberley",
     source: require("../../../images/Africa/africaSul2.jpg"),
     title: "Kimberley",
+    carousel: [
+      {img: require("../../../images/Asia/muralha1.jpg")},
+      {img: require("../../../images/Asia/muralha2.jpg")},
+      {img: require("../../../images/Asia/muralha3.jpg")},
+      {img: require("../../../images/Asia/muralha4.jpg")},
+   ]
   },
   {
     id: "Porto Elisabeth",
     source: require("../../../images/Africa/africaSul3.jpg"),
     title: "Porto Elisabeth", 
+    carousel: [
+      {img: require("../../../images/Asia/muralha1.jpg")},
+      {img: require("../../../images/Asia/muralha2.jpg")},
+      {img: require("../../../images/Asia/muralha3.jpg")},
+      {img: require("../../../images/Asia/muralha4.jpg")},
+   ]
   },
   {
     id: "Cidade Do Cabo",
     source: require("../../../images/Africa/africaSul4.jpg"),
     title: "Cidade Do Cabo",
+    carousel: [
+      {img: require("../../../images/Asia/muralha1.jpg")},
+      {img: require("../../../images/Asia/muralha2.jpg")},
+      {img: require("../../../images/Asia/muralha3.jpg")},
+      {img: require("../../../images/Asia/muralha4.jpg")},
+   ]
   },
  
  
@@ -180,7 +204,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

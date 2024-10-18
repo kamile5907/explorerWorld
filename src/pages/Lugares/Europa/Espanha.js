@@ -23,33 +23,63 @@ const ITEM_WIDTH = width * 0.8;
 const ITEM_HEIGHT = ITEM_WIDTH * 1.2;
 const SPACING = 20;
 
-  const places= [
-    {
-      id: "Museu do Prado",
-      source: require("../../../images/Europa/espanha1.jpg"),
-      title: "Museu do Prado",
-    },
-    {
-      id: "Cidade das Artes e das Ciências",
-      source: require("../../../images/Europa/espanha2.jpg"),
-      title: "Cidade das Artes e das Ciências",
-    },
-    {
-      id: "Catedral de Santiago de Compostela",
-      source: require("../../../images/Europa/espanha3.jpg"),
-      title: "Catedral de Santiago de Compostela",
-    },
-    {
-      id: "Plaza da España",
-      source: require("../../../images/Europa/espanha4.jpg"),
-      title: "Plaza de España",
-    },
-    {
-      id: "Museu Guggenheim Bilbao",
-      source: require("../../../images/Europa/espanha5.jpg"),
-      title: "Museu Guggenheim Bilbao",
-    },
-  ];
+const places= [
+  {
+    id: "Museu do Prado",
+    source: require("../../../images/Europa/espanha1.jpg"),
+    title: "Museu do Prado",
+    carousel: [
+    {img: require("../../../images/Europa/prado1.jpg")},
+    {img: require("../../../images/Europa/prado2.jpg")},
+    {img: require("../../../images/Europa/prado3.jpg")},
+    {img: require("../../../images/Europa/prado4.jpg")},
+ ] },
+  {
+    id: "Cidade das Artes e das Ciências",
+    source: require("../../../images/Europa/espanha2.jpg"),
+    title: "Cidade das Artes e das Ciências",
+    carousel: [
+      {img: require("../../../images/Europa/cidade1.jpg")},
+      {img: require("../../../images/Europa/cidade2.jpg")},
+      {img: require("../../../images/Europa/cidade3.jpg")},
+      {img: require("../../../images/Europa/cidade4.jpg")},
+    ]
+  },
+  {
+    id: "Catedral de Santiago de Compostela",
+    source: require("../../../images/Europa/espanha3.jpg"),
+    title: "Catedral de Santiago de Compostela",
+    carousel: [
+      {img: require("../../../images/Europa/compostela1.jpg")},
+      {img: require("../../../images/Europa/compostela2.jpg")},
+      {img: require("../../../images/Europa/compostela3.jpg")},
+      {img: require("../../../images/Europa/compostela4.jpg")},
+    ]
+  },
+  {
+    id: "Plaza da España",
+    source: require("../../../images/Europa/espanha4.jpg"),
+    title: "Plaza de España",
+    carousel: [
+      {img: require("../../../images/Europa/plaza1.jpg")},
+      {img: require("../../../images/Europa/plaza2.jpg")},
+      {img: require("../../../images/Europa/plaza3.jpg")},
+      {img: require("../../../images/Europa/plaza4.jpg")},
+    ]
+  },
+  {
+   
+    id: "Museu Guggenheim Bilbao",
+    source: require("../../../images/Europa/espanha5.jpg"),
+    title: "Museu Guggenheim Bilbao",
+    carousel: [
+      {img: require("../../../images/Europa/bilbao1.jpg")},
+      {img: require("../../../images/Europa/bilbao2.jpg")},
+      {img: require("../../../images/Europa/bilbao3.jpg")},
+      {img: require("../../../images/Europa/bilbao4.jpg")},
+    ]
+  },
+];
 
 const Carousel = () => {
   const scrollX = useRef(new Animated.Value(0)).current;
@@ -117,7 +147,7 @@ const Carousel = () => {
        blurRadius={5}>
     
     <TouchableOpacity
-                onPress={() => navigation.navigate("Europa")}
+                onPress={() => navigation.goBack()}
                 style={{
                   alignItems: "center",
                   justifyContent: "flex-start",
@@ -180,7 +210,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

@@ -28,22 +28,46 @@ const places = [
     id: "Mount Nimba Strict Nature Reserve",
     source: require("../../../images/Africa/nigeria1.jpg"),
     title: "Mount Nimba Strict Nature Reserve",
+    carousel: [
+      {img: require("../../../images/Asia/muralha1.jpg")},
+      {img: require("../../../images/Asia/muralha2.jpg")},
+      {img: require("../../../images/Asia/muralha3.jpg")},
+      {img: require("../../../images/Asia/muralha4.jpg")},
+   ]
   },
   {
     id: "Lagos",
     source: require("../../../images/Africa/nigeria2.jpg"),
     title: "Lagos",
+    carousel: [
+      {img: require("../../../images/Asia/muralha1.jpg")},
+      {img: require("../../../images/Asia/muralha2.jpg")},
+      {img: require("../../../images/Asia/muralha3.jpg")},
+      {img: require("../../../images/Asia/muralha4.jpg")},
+   ]
   },
 
   {
     id: "Ile Kassa",
     source: require("../../../images/Africa/nigeria3.jpg"),
     title: "Ile Kassa", 
+    carousel: [
+      {img: require("../../../images/Asia/muralha1.jpg")},
+      {img: require("../../../images/Asia/muralha2.jpg")},
+      {img: require("../../../images/Asia/muralha3.jpg")},
+      {img: require("../../../images/Asia/muralha4.jpg")},
+   ]
   },
   {
     id: "Cataratas",
     source: require("../../../images/Africa/nigeria4.jpg"),
     title: "Cataratas",
+    carousel: [
+      {img: require("../../../images/Asia/muralha1.jpg")},
+      {img: require("../../../images/Asia/muralha2.jpg")},
+      {img: require("../../../images/Asia/muralha3.jpg")},
+      {img: require("../../../images/Asia/muralha4.jpg")},
+   ]
   },
 ];
 
@@ -176,7 +200,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

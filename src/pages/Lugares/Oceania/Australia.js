@@ -28,22 +28,42 @@ const places = [
     id: "Ópera de Sydney",
     source: require("../../../images/Oceania/australia1.jpg"),
     title: "Ópera de Sydney",
-  },
+    carousel: [
+      {img: require("../../../images/Oceania/opera1.jpg")},
+      {img: require("../../../images/Oceania/opera2.jpg")},
+      {img: require("../../../images/Oceania/opera3.jpg")},
+      {img: require("../../../images/Oceania/opera4.jpg")},
+   ] },
   {
     id: "Ponte da Baía de Sydney",
     source: require("../../../images/Oceania/australia2.jpg"),
     title: "Ponte da Baía de Sydney",
-  },
+    carousel: [
+      {img: require("../../../images/Oceania/ponte1.jpg")},
+      {img: require("../../../images/Oceania/ponte2.jpg")},
+      {img: require("../../../images/Oceania/ponte3.jpg")},
+      {img: require("../../../images/Oceania/ponte4.jpg")},
+   ] },
   {
     id: "Parque Nacional Kakadu",
     source: require("../../../images/Oceania/australia3.jpg"),
     title: "Parque Nacional Kakadu",
-  },
+    carousel: [
+      {img: require("../../../images/Oceania/parque1.jpg")},
+      {img: require("../../../images/Oceania/parque2.jpg")},
+      {img: require("../../../images/Oceania/parque3.jpg")},
+      {img: require("../../../images/Oceania/parque4.jpg")},
+   ] },
   {
     id: "Jardim Botânico Real de Sydney",
     source: require("../../../images/Oceania/australia4.jpg"),
     title: "Jardim Botânico Real de Sydney",
-  },
+    carousel: [
+      {img: require("../../../images/Oceania/jardim1.jpg")},
+      {img: require("../../../images/Oceania/jardim2.jpg")},
+      {img: require("../../../images/Oceania/jardim3.jpg")},
+      {img: require("../../../images/Oceania/jardim4.jpg")},
+   ] },
 ];
 
 
@@ -176,7 +196,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

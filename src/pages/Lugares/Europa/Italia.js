@@ -23,33 +23,63 @@ const ITEM_WIDTH = width * 0.8;
 const ITEM_HEIGHT = ITEM_WIDTH * 1.2;
 const SPACING = 20;
 
-  const places= [
-    {
-      id: "Torre de Pisa",
-      source: require("../../../images/Europa/italia1.jpg"),
-      title: "Torre de Pisa",
-    },
-    {
-      id: "Coliseu",
-      source: require("../../../images/Europa/italia2.jpg"),
-      title: "Coliseu",
-    },
-    {
-      id: "Catedral de Milão",
-      source: require("../../../images/Europa/italia3.jpg"),
-      title: "Catedral de Milão",
-    },
-    {
-      id: "Ponte dos Suspiros",
-      source: require("../../../images/Europa/italia4.jpg"),
-      title: "Ponte Dos Suspiros",
-    },
-    {
-      id: "Panteão",
-      source: require("../../../images/Europa/italia5.jpg"),
-      title: "Panteão",
-    },
-  ];
+const places= [
+  {
+    id: "Torre de Pisa",
+    source: require("../../../images/Europa/italia1.jpg"),
+    title: "Torre de Pisa",
+    carousel: [
+    {img: require("../../../images/Europa/pisa1.jpg")},
+    {img: require("../../../images/Europa/pisa2.jpg")},
+    {img: require("../../../images/Europa/pisa3.jpg")},
+    {img: require("../../../images/Europa/pisa4.jpg")},
+ ] },
+  {
+    id: "Coliseu",
+    source: require("../../../images/Europa/italia2.jpg"),
+    title: "Coliseu",
+    carousel: [
+      {img: require("../../../images/Europa/coliseu1.jpg")},
+      {img: require("../../../images/Europa/coliseu2.jpg")},
+      {img: require("../../../images/Europa/coliseu3.jpg")},
+      {img: require("../../../images/Europa/coliseu4.jpg")},
+    ]
+  },
+  {
+    id: "Catedral de Milão",
+    source: require("../../../images/Europa/italia3.jpg"),
+    title: "Catedral de Milão",
+    carousel: [
+      {img: require("../../../images/Europa/catedral1.jpg")},
+      {img: require("../../../images/Europa/catedral2.jpg")},
+      {img: require("../../../images/Europa/catedral3.jpg")},
+      {img: require("../../../images/Europa/catedral4.jpg")},
+    ]
+  },
+  {
+    id: "Ponte dos Suspiros",
+    source: require("../../../images/Europa/italia4.jpg"),
+    title: "Ponte Dos Suspiros",
+    carousel: [
+      {img: require("../../../images/Europa/ponte1.jpg")},
+      {img: require("../../../images/Europa/ponte2.jpg")},
+      {img: require("../../../images/Europa/ponte3.jpg")},
+      {img: require("../../../images/Europa/ponte4.jpg")},
+    ]
+  },
+  {
+   
+    id: "Panteão",
+    source: require("../../../images/Europa/italia5.jpg"),
+    title: "Panteão",
+    carousel: [
+      {img: require("../../../images/Europa/panteao1.jpg")},
+      {img: require("../../../images/Europa/panteao2.jpg")},
+      {img: require("../../../images/Europa/panteao3.jpg")},
+      {img: require("../../../images/Europa/panteao4.jpg")},
+    ]
+  },
+];
 
 const Carousel = () => {
   const scrollX = useRef(new Animated.Value(0)).current;
@@ -117,7 +147,7 @@ const Carousel = () => {
        blurRadius={5}>
     
     <TouchableOpacity
-                onPress={() => navigation.navigate("Europa")}
+                onPress={() => navigation.goBack()}
                 style={{
                   alignItems: "center",
                   justifyContent: "flex-start",
@@ -180,7 +210,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

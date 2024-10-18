@@ -28,22 +28,42 @@ const places = [
     id: "Museu Te Papa Tongarewa",
     source: require("../../../images/Oceania/zelandia1.jpg"),
     title: "Museu Te Papa Tongarewa",
-  },
+    carousel: [
+      {img: require("../../../images/Oceania/museu1.jpg")},
+      {img: require("../../../images/Oceania/museu2.jpg")},
+      {img: require("../../../images/Oceania/museu3.jpg")},
+      {img: require("../../../images/Oceania/museu4.jpg")},
+   ] },
   {
     id: "Hobbiton Movie Set",
     source: require("../../../images/Oceania/zelandia2.jpg"),
     title: "Hobbiton Movie Set",
-  },
+    carousel: [
+      {img: require("../../../images/Oceania/hobbiton1.jpg")},
+      {img: require("../../../images/Oceania/hobbiton2.jpg")},
+      {img: require("../../../images/Oceania/hobbiton3.jpg")},
+      {img: require("../../../images/Oceania/hobbiton4.jpg")},
+   ] },
   {
     id: "Sky Tower",
     source: require("../../../images/Oceania/zelandia3.jpg"),
     title: "Sky Tower",
-  },
+    carousel: [
+      {img: require("../../../images/Oceania/sky1.jpg")},
+      {img: require("../../../images/Oceania/sky2.jpg")},
+      {img: require("../../../images/Oceania/sky3.jpg")},
+      {img: require("../../../images/Oceania/sky4.jpg")},
+   ] },
   {
     id: "Waiotapu Thermal Wonderland",
     source: require("../../../images/Oceania/zelandia4.jpg"),
     title: "Waiotapu Thermal Wonderland", 
-  },
+    carousel: [
+      {img: require("../../../images/Oceania/waiotapu1.jpg")},
+      {img: require("../../../images/Oceania/waiotapu2.jpg")},
+      {img: require("../../../images/Oceania/waiotapu3.jpg")},
+      {img: require("../../../images/Oceania/waiotapu4.jpg")},
+   ] },
 ];
 
 
@@ -176,7 +196,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

@@ -23,33 +23,63 @@ const ITEM_WIDTH = width * 0.8;
 const ITEM_HEIGHT = ITEM_WIDTH * 1.2;
 const SPACING = 20;
 
-  const places= [
-    {
-      id: "Santorini",
+const places= [
+  {
+    id: "Santorini",
       source: require("../../../images/Europa/grecia1.jpg"),
       title: "Santorini",
-    },
-    {
-      id: "Museu do Acropole",
+    carousel: [
+    {img: require("../../../images/Europa/santorini1.jpg")},
+    {img: require("../../../images/Europa/santorini2.jpg")},
+    {img: require("../../../images/Europa/santorini3.jpg")},
+    {img: require("../../../images/Europa/santorini4.jpg")},
+ ] },
+  {
+    id: "Museu do Acropole",
       source: require("../../../images/Europa/grecia2.jpg"),
       title: "Museu da Acrópole",
-    },
-    {
-      id: "Metéora",
-      source: require("../../../images/Europa/grecia3.jpg"),
-      title: "Metéora",
-    },
-    {
-      id: "Navagio",
-      source: require("../../../images/Europa/grecia4.jpg"),
-      title: "Navagio",
-    },
-    {
-      id: "Knossos Palace",
-      source: require("../../../images/Europa/grecia5.jpg"),
-      title: "Knossos Palace",
-    },
-  ];
+    carousel: [
+      {img: require("../../../images/Europa/museu1.jpg")},
+      {img: require("../../../images/Europa/museu2.jpg")},
+      {img: require("../../../images/Europa/museu3.jpg")},
+      {img: require("../../../images/Europa/museu4.jpg")},
+    ]
+  },
+  {
+    id: "Metéora",
+    source: require("../../../images/Europa/grecia3.jpg"),
+    title: "Metéora",
+    carousel: [
+      {img: require("../../../images/Europa/meteora1.jpg")},
+      {img: require("../../../images/Europa/meteora2.jpg")},
+      {img: require("../../../images/Europa/meteora3.jpg")},
+      {img: require("../../../images/Europa/meteora4.jpg")},
+    ]
+  },
+  {
+    id: "Navagio",
+    source: require("../../../images/Europa/grecia4.jpg"),
+    title: "Navagio",
+    carousel: [
+      {img: require("../../../images/Europa/navagio1.jpg")},
+      {img: require("../../../images/Europa/navagio2.jpg")},
+      {img: require("../../../images/Europa/navagio3.jpg")},
+      {img: require("../../../images/Europa/navagio4.jpg")},
+    ]
+  },
+  {
+   
+    id: "Knossos Palace",
+    source: require("../../../images/Europa/grecia5.jpg"),
+    title: "Knossos Palace",
+    carousel: [
+      {img: require("../../../images/Europa/knossos1.jpg")},
+      {img: require("../../../images/Europa/knossos2.jpg")},
+      {img: require("../../../images/Europa/knossos3.jpg")},
+      {img: require("../../../images/Europa/knossos4.jpg")},
+    ]
+  },
+];
 
 const Carousel = () => {
   const scrollX = useRef(new Animated.Value(0)).current;
@@ -117,7 +147,7 @@ const Carousel = () => {
        blurRadius={5}>
     
     <TouchableOpacity
-                onPress={() => navigation.navigate("Europa")}
+                onPress={() => navigation.goBack()}
                 style={{
                   alignItems: "center",
                   justifyContent: "flex-start",
@@ -180,7 +210,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

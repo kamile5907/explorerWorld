@@ -23,33 +23,63 @@ const ITEM_WIDTH = width * 0.8;
 const ITEM_HEIGHT = ITEM_WIDTH * 1.2;
 const SPACING = 20;
 
-  const places= [
-    {
-      id: "Universal Studios Japan",
+const places= [
+  {
+    id: "Universal Studios Japan",
       source: require("../../../images/Asia/japao1.jpg"),
       title: "Universal Studios Japan",
-    },
-    {
-      id: "Parque de Nara",
+    carousel: [
+    {img: require("../../../images/Asia/universal1.jpg")},
+    {img: require("../../../images/Asia/universal2.jpg")},
+    {img: require("../../../images/Asia/universal3.jpg")},
+    {img: require("../../../images/Asia/universal4.jpg")},
+ ] },
+  {
+    id: "Parque de Nara",
       source: require("../../../images/Asia/japao2.jpg"),
       title: "Parque de Nara",
-    },
-    {
-      id: "Hinjuku Gyoen",
+    carousel: [
+      {img: require("../../../images/Asia/nara1.jpg")},
+      {img: require("../../../images/Asia/nara2.jpg")},
+      {img: require("../../../images/Asia/nara3.jpg")},
+      {img: require("../../../images/Asia/nara4.jpg")},
+    ]
+  },
+  {
+    id: "Arashiyama",
+    source: require("../../../images/Asia/japao4.jpg"),
+    title: "Arashiyama",
+    carousel: [
+      {img: require("../../../images/Asia/arashiyama1.jpg")},
+      {img: require("../../../images/Asia/arashiyama2.jpg")},
+      {img: require("../../../images/Asia/arashiyama3.jpg")},
+      {img: require("../../../images/Asia/arashiyama4.jpg")},
+    ]
+  },
+  {
+    id: "Hinjuku Gyoen",
       source: require("../../../images/Asia/japao3.jpg"),
       title: "hinjuku Gyoen",
-    },
-    {
-      id: "Arashiyama",
-      source: require("../../../images/Asia/japao4.jpg"),
-      title: "Arashiyama",
-    },
-    {
-      id: "Museu Ghibli",
-      source: require("../../../images/Asia/japao5.jpg"),
-      title: "Museu Ghibli",
-    },
-  ];
+    carousel: [
+      {img: require("../../../images/Asia/gyoen1.jpg")},
+      {img: require("../../../images/Asia/gyoen2.jpg")},
+      {img: require("../../../images/Asia/gyoen3.jpg")},
+      {img: require("../../../images/Asia/gyoen4.jpg")},
+    ]
+  },
+  {
+   
+    id: "Museu Ghibli",
+    source: require("../../../images/Asia/japao5.jpg"),
+    title: "Museu Ghibli",
+    carousel: [
+      {img: require("../../../images/Asia/ghibli1.jpg")},
+      {img: require("../../../images/Asia/ghibli2.jpg")},
+      {img: require("../../../images/Asia/ghibli3.jpg")},
+      {img: require("../../../images/Asia/ghibli4.jpg")},
+    ]
+  },
+];
 
 const Carousel = () => {
   const scrollX = useRef(new Animated.Value(0)).current;
@@ -180,7 +210,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

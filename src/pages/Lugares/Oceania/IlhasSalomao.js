@@ -28,22 +28,42 @@ const places = [
     id: "Marovo Lagoon",
     source: require("../../../images/Oceania/salomao1.jpg"),
     title: "Marovo Lagoon",
-  },
+    carousel: [
+      {img: require("../../../images/Oceania/marovo1.jpg")},
+      {img: require("../../../images/Oceania/marovo2.jpg")},
+      {img: require("../../../images/Oceania/marovo3.jpg")},
+      {img: require("../../../images/Oceania/marovo4.jpg")},
+   ] },
   {
     id: "Kasolo Island",
-    source: require("../../../images/Oceania/salomao1.jpg"),
+    source: require("../../../images/Oceania/salomao2.jpg"),
     title: "Kasolo Island",
-  },
+    carousel: [
+      {img: require("../../../images/Oceania/kasolo1.jpg")},
+      {img: require("../../../images/Oceania/kasolo2.jpg")},
+      {img: require("../../../images/Oceania/kasolo3.jpg")},
+      {img: require("../../../images/Oceania/kasolo4.jpg")},
+   ] },
   {
     id: "Vilu War Museum",
     source: require("../../../images/Oceania/salomao3.jpg"),
     title: "Vilu War Museum",
-  },
+    carousel: [
+      {img: require("../../../images/Oceania/vilu1.jpg")},
+      {img: require("../../../images/Oceania/vilu2.jpg")},
+      {img: require("../../../images/Oceania/vilu3.jpg")},
+      {img: require("../../../images/Oceania/vilu4.jpg")},
+   ] },
   {
     id: "Tenaru Falls", 
     source: require("../../../images/Oceania/salomao4.jpg"),
     title: "Tenaru Falls",
-  },
+    carousel: [
+      {img: require("../../../images/Oceania/tenaru1.jpg")},
+      {img: require("../../../images/Oceania/tenaru2.jpg")},
+      {img: require("../../../images/Oceania/tenaru3.jpg")},
+      {img: require("../../../images/Oceania/tenaru4.jpg")},
+   ] },
 ];
 
 
@@ -176,7 +196,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

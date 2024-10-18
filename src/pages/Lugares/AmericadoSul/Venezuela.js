@@ -28,26 +28,56 @@ const SPACING = 20;
       id: "Parque Marrocoy",
       source: require("../../../images/imagesAmericaSul/venezuela1.jpg"),
       title: "Parque Marrocoy",
+      carousel: [
+        {img: require("../../../images/imagesAmericaSul/marrocoy1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/marrocoy2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/marrocoy3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/marrocoy4.jpg")},
+     ]
     },
     {
       id: "Tucacas",
       source: require("../../../images/imagesAmericaSul/venezuela2.jpg"),
       title: "Tucacas",
+      carousel: [
+        {img: require("../../../images/imagesAmericaSul/tucacas1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/tucacas2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/tucacas3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/tucacas4.jpg")},
+     ]
     },
     {
       id: "Los Roches",
       source: require("../../../images/imagesAmericaSul/venezuela3.jpg"),
       title: "Los Roches",
+      carousel: [
+        {img: require("../../../images/imagesAmericaSul/losroches1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/losroches2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/losroches3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/losroches4.jpg")},
+     ]
     },
     {
       id: "Isla Tortuga",
       source: require("../../../images/imagesAmericaSul/venezuela4.jpg"),
       title: "Isla Tortuga",
+      carousel: [
+        {img: require("../../../images/imagesAmericaSul/tortuga1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/tortuga2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/tortuga3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/tortuga4.jpg")},
+     ]
     },
     {
       id: "Santo Angel",
       source: require("../../../images/imagesAmericaSul/venezuela5.jpg"),
       title: "Santo Angel",
+      carousel: [
+        {img: require("../../../images/imagesAmericaSul/santoangel1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/santoangel2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/santoangel3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/santoangel4.jpg")},
+     ]
     },
   ];
 
@@ -180,7 +210,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

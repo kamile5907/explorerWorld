@@ -23,34 +23,63 @@ const ITEM_WIDTH = width * 0.8;
 const ITEM_HEIGHT = ITEM_WIDTH * 1.2;
 const SPACING = 20;
 
-  const places= [
-    {
-      id: "Muralha da China",
-      source: require("../../../images/Asia/china1.jpg"),
-      title: "Muralha da China",
-    },
-    {
-      id: "Cidade Proibida",
-      source: require("../../../images/Asia/china2.jpg"),
-      title: "Cidade Proibida",
-    },
-    {
-      id: "Jardim Yu",
-      source: require("../../../images/Asia/china3.jpg"),
-      title: "Jardim Yu",
-    },
-    {
-      id: "Hong Kong Disneyland",
-      source: require("../../../images/Asia/china4.jpg"),
-      title: "Hong Kong Disneyland",
-    },
-    {
-     
-      id: "Grande Buda de Leshan",
-      source: require("../../../images/Asia/china5.jpg"),
-      title: "Grande Buda de Leshan",
-    },
-  ];
+const places= [
+  {
+    id: "Muralha da China",
+    source: require("../../../images/Asia/china1.jpg"),
+    title: "Muralha da China",
+    carousel: [
+    {img: require("../../../images/Asia/muralha1.jpg")},
+    {img: require("../../../images/Asia/muralha2.jpg")},
+    {img: require("../../../images/Asia/muralha3.jpg")},
+    {img: require("../../../images/Asia/muralha4.jpg")},
+ ] },
+  {
+    id: "Cidade Proibida",
+    source: require("../../../images/Asia/china2.jpg"),
+    title: "Cidade Proibida",
+    carousel: [
+      {img: require("../../../images/Asia/proibida1.jpg")},
+      {img: require("../../../images/Asia/proibida2.jpg")},
+      {img: require("../../../images/Asia/proibida3.jpg")},
+      {img: require("../../../images/Asia/proibida4.jpg")},
+    ]
+  },
+  {
+    id: "Jardim Yu",
+    source: require("../../../images/Asia/china3.jpg"),
+    title: "Jardim Yu",
+    carousel: [
+      {img: require("../../../images/Asia/jardim1.jpg")},
+      {img: require("../../../images/Asia/jardim2.jpg")},
+      {img: require("../../../images/Asia/jardim3.jpg")},
+      {img: require("../../../images/Asia/jardim4.jpg")},
+    ]
+  },
+  {
+    id: "Hong Kong Disneyland",
+    source: require("../../../images/Asia/china4.jpg"),
+    title: "Hong Kong Disneyland",
+    carousel: [
+      {img: require("../../../images/Asia/hongkong1.jpg")},
+      {img: require("../../../images/Asia/hongkong2.jpg")},
+      {img: require("../../../images/Asia/hongkong3.jpg")},
+      {img: require("../../../images/Asia/hongkong4.jpg")},
+    ]
+  },
+  {
+   
+    id: "Grande Buda de Leshan",
+    source: require("../../../images/Asia/china5.jpg"),
+    title: "Grande Buda de Leshan",
+    carousel: [
+      {img: require("../../../images/Asia/buda1.jpg")},
+      {img: require("../../../images/Asia/buda2.jpg")},
+      {img: require("../../../images/Asia/buda3.jpg")},
+      {img: require("../../../images/Asia/buda4.jpg")},
+    ]
+  },
+];
 
 const Carousel = () => {
   const scrollX = useRef(new Animated.Value(0)).current;
@@ -181,7 +210,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

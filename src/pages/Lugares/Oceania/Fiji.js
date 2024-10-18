@@ -28,23 +28,43 @@ const places = [
     id: "Garden of the Sleeping Giant",
     source: require("../../../images/Oceania/fiji1.jpg"),
     title: "Garden of the Sleeping Giant",
-  },
+    carousel: [
+      {img: require("../../../images/Oceania/garden1.jpg")},
+      {img: require("../../../images/Oceania/garden2.jpg")},
+      {img: require("../../../images/Oceania/garden3.jpg")},
+      {img: require("../../../images/Oceania/garden4.jpg")},
+   ] },
  
   {
     id: "Kula WILD Adventure Park",
     source: require("../../../images/Oceania/fiji2.jpg"),
     title: "Kula WILD Adventure Park",
-  },
+    carousel: [
+      {img: require("../../../images/Oceania/kula1.jpg")},
+      {img: require("../../../images/Oceania/kula2.jpg")},
+      {img: require("../../../images/Oceania/kula3.jpg")},
+      {img: require("../../../images/Oceania/kula4.jpg")},
+   ] },
   {
     id: "Port Denarau Marina",
     source: require("../../../images/Oceania/fiji3.jpg"),
     title: "Port Denarau Marina",
-  },
+    carousel: [
+      {img: require("../../../images/Oceania/port1.jpg")},
+      {img: require("../../../images/Oceania/port2.jpg")},
+      {img: require("../../../images/Oceania/port3.jpg")},
+      {img: require("../../../images/Oceania/port4.jpg")},
+   ] },
   {
     id: "Colo-I-Suva Forest Park",
-    source: require("../../../images/Oceania/fiji3.jpg"),
+    source: require("../../../images/Oceania/fiji4.jpg"),
     title: "Colo-I-Suva Forest Park",
-  },
+    carousel: [
+      {img: require("../../../images/Oceania/colo1.jpg")},
+      {img: require("../../../images/Oceania/colo2.jpg")},
+      {img: require("../../../images/Oceania/colo3.jpg")},
+      {img: require("../../../images/Oceania/colo4.jpg")},
+   ] },
 ];
 
 
@@ -177,7 +197,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

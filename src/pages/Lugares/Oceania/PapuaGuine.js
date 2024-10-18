@@ -28,22 +28,42 @@ const places = [
     id: "Tavurvur",
     source: require("../../../images/Oceania/papua1.jpg"),
     title: "Tavurvur",
-  },
+    carousel: [
+      {img: require("../../../images/Oceania/tavurvur1.jpg")},
+      {img: require("../../../images/Oceania/tavurvur2.jpg")},
+      {img: require("../../../images/Oceania/tavurvur3.jpg")},
+      {img: require("../../../images/Oceania/tavurvur4.jpg")},
+   ] },
   {
     id: "Bomana War Cemetery",
     source: require("../../../images/Oceania/papua2.jpg"),
     title: "Bomana War Cemetery",
-  },
+    carousel: [
+      {img: require("../../../images/Oceania/bomana1.jpg")},
+      {img: require("../../../images/Oceania/bomana2.jpg")},
+      {img: require("../../../images/Oceania/bomana3.jpg")},
+      {img: require("../../../images/Oceania/bomana4.jpg")},
+   ] },
   {
     id: "Port Moresby",
     source: require("../../../images/Oceania/papua3.jpg"),
     title: "Port Moresby",
-  },
+    carousel: [
+      {img: require("../../../images/Oceania/port1 (1).jpg")},
+      {img: require("../../../images/Oceania/port2 (1).jpg")},
+      {img: require("../../../images/Oceania/port3 (1).jpg")},
+      {img: require("../../../images/Oceania/port4 (1).jpg")},
+   ] },
   {
     id: "Monte Wilhelm",
     source: require("../../../images/Oceania/papua4.jpg"),
     title: "Monte Wilhelm",
-  },
+    carousel: [
+      {img: require("../../../images/Oceania/monte1.jpg")},
+      {img: require("../../../images/Oceania/monte2.jpg")},
+      {img: require("../../../images/Oceania/monte3.jpg")},
+      {img: require("../../../images/Oceania/monte4.jpg")},
+   ] },
 ];
 
 
@@ -176,7 +196,7 @@ const PapuaGuine = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

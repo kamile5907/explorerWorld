@@ -28,27 +28,56 @@ const SPACING = 20;
       id: "Ruins Viejo",
       source: require("../../../images/imagesAmericaCentro/panama1.jpg"),
       title:"Ruins Viejo",
-      
+      carousel: [
+        {img: require("../../../images/Asia/muralha1.jpg")},
+        {img: require("../../../images/Asia/muralha2.jpg")},
+        {img: require("../../../images/Asia/muralha3.jpg")},
+        {img: require("../../../images/Asia/muralha4.jpg")},
+     ]
     },
     {
       id: "Bocas Del Toro",
       source: require("../../../images/imagesAmericaCentro/panama2.jpg"),
       title: "Bocas Del Toro",
+      carousel: [
+        {img: require("../../../images/Asia/muralha1.jpg")},
+        {img: require("../../../images/Asia/muralha2.jpg")},
+        {img: require("../../../images/Asia/muralha3.jpg")},
+        {img: require("../../../images/Asia/muralha4.jpg")},
+     ]
     },
     {
       id: "Biomuseu Panamá",
       source: require("../../../images/imagesAmericaCentro/panama3.jpg"),
       title: "Biomuseu Panamá",
+      carousel: [
+        {img: require("../../../images/Asia/muralha1.jpg")},
+        {img: require("../../../images/Asia/muralha2.jpg")},
+        {img: require("../../../images/Asia/muralha3.jpg")},
+        {img: require("../../../images/Asia/muralha4.jpg")},
+     ]
     },
     {
       id: "Archipelago De San Blas",
       source: require("../../../images/imagesAmericaCentro/panama4.jpg"),
       title: "Archipelago De San Blas",
+      carousel: [
+        {img: require("../../../images/Asia/muralha1.jpg")},
+        {img: require("../../../images/Asia/muralha2.jpg")},
+        {img: require("../../../images/Asia/muralha3.jpg")},
+        {img: require("../../../images/Asia/muralha4.jpg")},
+     ]
     },
     {
       id: "Coiba",
       source: require("../../../images/imagesAmericaCentro/panama5.jpg"),
       title: "Coiba",
+      carousel: [
+        {img: require("../../../images/Asia/muralha1.jpg")},
+        {img: require("../../../images/Asia/muralha2.jpg")},
+        {img: require("../../../images/Asia/muralha3.jpg")},
+        {img: require("../../../images/Asia/muralha4.jpg")},
+     ]
     },
   ];
 
@@ -181,7 +210,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel})}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

@@ -28,26 +28,56 @@ const SPACING = 20;
       id: "Vulcão Masaya",
       source: require("../../../images/imagesAmericaCentro/nicaragua1.jpg"),
       title: "Vulcão Masaya",
+      carousel: [
+        {img: require("../../../images/Asia/muralha1.jpg")},
+        {img: require("../../../images/Asia/muralha2.jpg")},
+        {img: require("../../../images/Asia/muralha3.jpg")},
+        {img: require("../../../images/Asia/muralha4.jpg")},
+     ]
     },
     {
       id: "Little Corn Island",
       source: require("../../../images/imagesAmericaCentro/nicaragua2.jpg"),
       title: "Little Corn Island",
+      carousel: [
+        {img: require("../../../images/Asia/muralha1.jpg")},
+        {img: require("../../../images/Asia/muralha2.jpg")},
+        {img: require("../../../images/Asia/muralha3.jpg")},
+        {img: require("../../../images/Asia/muralha4.jpg")},
+     ]
     },
     {
       id: "Isletas de Granada",
       source: require("../../../images/imagesAmericaCentro/nicaragua3.jpg"),
       title: "Isletas de Granada",
+      carousel: [
+        {img: require("../../../images/Asia/muralha1.jpg")},
+        {img: require("../../../images/Asia/muralha2.jpg")},
+        {img: require("../../../images/Asia/muralha3.jpg")},
+        {img: require("../../../images/Asia/muralha4.jpg")},
+     ]
     },
     {
       id: "Cerro Negro",
       source: require("../../../images/imagesAmericaCentro/nicaragua4.jpg"),
       title: "Cerro negro",
+      carousel: [
+        {img: require("../../../images/Asia/muralha1.jpg")},
+        {img: require("../../../images/Asia/muralha2.jpg")},
+        {img: require("../../../images/Asia/muralha3.jpg")},
+        {img: require("../../../images/Asia/muralha4.jpg")},
+     ]
     },
     {
       id: "Catedral de León",
       source: require("../../../images/imagesAmericaCentro/nicaragua5.jpg"),
       title: "Catedral De León",
+      carousel: [
+        {img: require("../../../images/Asia/muralha1.jpg")},
+        {img: require("../../../images/Asia/muralha2.jpg")},
+        {img: require("../../../images/Asia/muralha3.jpg")},
+        {img: require("../../../images/Asia/muralha4.jpg")},
+     ]
     },
   ];
 
@@ -180,7 +210,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text

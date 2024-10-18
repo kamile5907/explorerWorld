@@ -23,33 +23,63 @@ const ITEM_WIDTH = width * 0.8;
 const ITEM_HEIGHT = ITEM_WIDTH * 1.2;
 const SPACING = 20;
 
-  const places= [
-    {
-      id: "Pavilion",
+const places= [
+  {
+    id: "Pavilion",
       source: require("../../../images/Asia/malasia1.jpg"),
       title: "Pavilion Shopping center",
-    },
-    {
-      id: "Batu Chaves",
+    carousel: [
+    {img: require("../../../images/Asia/pavilion1.jpg")},
+    {img: require("../../../images/Asia/pavilion2.jpg")},
+    {img: require("../../../images/Asia/pavilion3.jpg")},
+    {img: require("../../../images/Asia/pavilion4.jpg")},
+ ] },
+  {
+    id: "Batu Chaves",
       source: require("../../../images/Asia/malasia2.jpg"),
       title: "Batu Caves",
-    },
-    {
-      id: "Legoland",
+    carousel: [
+      {img: require("../../../images/Asia/batu1.jpg")},
+      {img: require("../../../images/Asia/batu2.jpg")},
+      {img: require("../../../images/Asia/batu3.jpg")},
+      {img: require("../../../images/Asia/batu4.jpg")},
+    ]
+  },
+  {
+    id: "Legoland",
       source: require("../../../images/Asia/malasia3.jpg"),
       title: "LEGOLAND Malaysia",
-    },
-    {
-      id: "Torre de Kuala Lumpur",
+    carousel: [
+      {img: require("../../../images/Asia/lego1.jpg")},
+      {img: require("../../../images/Asia/lego2.jpg")},
+      {img: require("../../../images/Asia/lego3.jpg")},
+      {img: require("../../../images/Asia/lego4.jpg")},
+    ]
+  },
+  {
+    id: "Torre de Kuala Lumpur",
       source: require("../../../images/Asia/malasia4.jpg"),
       title: "Torre de Kuala Lumpur",
-    },
-    {
-      id: "Klcc Park",
+    carousel: [
+      {img: require("../../../images/Asia/kuala1.jpg")},
+      {img: require("../../../images/Asia/kuala2.jpg")},
+      {img: require("../../../images/Asia/kuala3.jpg")},
+      {img: require("../../../images/Asia/kuala4.jpg")},
+    ]
+  },
+  {
+   
+    id: "Klcc Park",
       source: require("../../../images/Asia/malasia5.jpg"),
       title: "KLCC Park",
-    },
-  ];
+    carousel: [
+      {img: require("../../../images/Asia/klcc1.jpg")},
+      {img: require("../../../images/Asia/klcc2.jpg")},
+      {img: require("../../../images/Asia/klcc3.jpg")},
+      {img: require("../../../images/Asia/klcc4.jpg")},
+    ]
+  },
+];
 
 const Carousel = () => {
   const scrollX = useRef(new Animated.Value(0)).current;
@@ -180,7 +210,7 @@ const Carousel = () => {
                   >
 
                         <TouchableOpacity>
-                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id })}>
+                        <Pressable onPress={() => navigation.navigate('DescriptionPage', { id: item.id, carousel: item.carousel })}>
                         <View style={{ width: 330, height: 400, alignItems: "center", justifyContent: "center", backgroundColor:'white'   }}>
                     <Image source={item.source} style={styles.image} />
                     <Text
