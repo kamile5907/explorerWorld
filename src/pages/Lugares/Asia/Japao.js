@@ -29,7 +29,7 @@ const places= [
       source: require("../../../images/Asia/japao1.jpg"),
       title: "Universal Studios Japan",
     carousel: [
-    {img: require("../../../images/Asia/universal1.jpg")},
+    {img: require("../../../images/Asia/universal1.jpg")},//
     {img: require("../../../images/Asia/universal2.jpg")},
     {img: require("../../../images/Asia/universal3.jpg")},
     {img: require("../../../images/Asia/universal4.jpg")},
@@ -51,7 +51,7 @@ const places= [
     title: "Arashiyama",
     carousel: [
       {img: require("../../../images/Asia/arashiyama1.jpg")},
-      {img: require("../../../images/Asia/arashiyama2.jpg")},
+      {img: require("../../../images/Asia/arashiyama2.jpg")},//
       {img: require("../../../images/Asia/arashiyama3.jpg")},
       {img: require("../../../images/Asia/arashiyama4.jpg")},
     ]
@@ -61,10 +61,10 @@ const places= [
       source: require("../../../images/Asia/japao3.jpg"),
       title: "hinjuku Gyoen",
     carousel: [
-      {img: require("../../../images/Asia/gyoen1.jpg")},
-      {img: require("../../../images/Asia/gyoen2.jpg")},
+      {img: require("../../../images/Asia/gyoen1.jpg")},//
+      {img: require("../../../images/Asia/gyoen2.jpg")},//
       {img: require("../../../images/Asia/gyoen3.jpg")},
-      {img: require("../../../images/Asia/gyoen4.jpg")},
+      {img: require("../../../images/Asia/gyoen4.jpg")},//
     ]
   },
   {
@@ -73,7 +73,7 @@ const places= [
     source: require("../../../images/Asia/japao5.jpg"),
     title: "Museu Ghibli",
     carousel: [
-      {img: require("../../../images/Asia/ghibli1.jpg")},
+      {img: require("../../../images/Asia/ghibli1.jpg")},//
       {img: require("../../../images/Asia/ghibli2.jpg")},
       {img: require("../../../images/Asia/ghibli3.jpg")},
       {img: require("../../../images/Asia/ghibli4.jpg")},

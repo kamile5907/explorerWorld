@@ -29,9 +29,9 @@ const places = [
     source: require("../../../images/Oceania/australia1.jpg"),
     title: "Ópera de Sydney",
     carousel: [
-      {img: require("../../../images/Oceania/opera1.jpg")},
+      {img: require("../../../images/Oceania/opera1.jpg")},//
       {img: require("../../../images/Oceania/opera2.jpg")},
-      {img: require("../../../images/Oceania/opera3.jpg")},
+      {img: require("../../../images/Oceania/opera3.jpg")},//
       {img: require("../../../images/Oceania/opera4.jpg")},
    ] },
   {
@@ -60,7 +60,7 @@ const places = [
     title: "Jardim Botânico Real de Sydney",
     carousel: [
       {img: require("../../../images/Oceania/jardim1.jpg")},
-      {img: require("../../../images/Oceania/jardim2.jpg")},
+      {img: require("../../../images/Oceania/jardim2.jpg")},//
       {img: require("../../../images/Oceania/jardim3.jpg")},
       {img: require("../../../images/Oceania/jardim4.jpg")},
    ] },

@@ -30,9 +30,9 @@ const SPACING = 20;
       title: "Plaza 24 de Septiembre",
       carousel: [
         {img: require("../../../images/imagesAmericaSul/septiembre4.jpg")},
-        {img: require("../../../images/imagesAmericaSul/septiembre2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/septiembre2.jpg")},//
         {img: require("../../../images/imagesAmericaSul/septiembre3.jpg")},
-        {img: require("../../../images/imagesAmericaSul/septiembre1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/septiembre1.jpg")},//
      ]
     },
     {
@@ -42,8 +42,8 @@ const SPACING = 20;
       carousel: [
         {img: require("../../../images/imagesAmericaSul/Laguna1.jpg")},
         {img: require("../../../images/imagesAmericaSul/laguna2.jpg")},
-        {img: require("../../../images/imagesAmericaSul/laguna3.jpg")},
-        {img: require("../../../images/imagesAmericaSul/laguna4.jpg")},
+        {img: require("../../../images/imagesAmericaSul/laguna3.jpg")},//
+        {img: require("../../../images/imagesAmericaSul/laguna4.jpg")},//
      ]
     },
     {
@@ -51,9 +51,9 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaSul/bolivia3.jpg"),
       title: "Isla Incahuasi",
       carousel: [
-        {img: require("../../../images/imagesAmericaSul/incahuasi1.jpg")},
-        {img: require("../../../images/imagesAmericaSul/incahuasi2.jpg")},
-        {img: require("../../../images/imagesAmericaSul/incahuasi3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/incahuasi1.jpg")},//
+        {img: require("../../../images/imagesAmericaSul/incahuasi2.jpg")},//
+        {img: require("../../../images/imagesAmericaSul/incahuasi3.jpg")},//
         {img: require("../../../images/imagesAmericaSul/incahuasi4.jpg")},
      ]
     },
@@ -62,10 +62,10 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaSul/bolivia4.jpg"),
       title: "Valle de La Luna",
       carousel: [
-        {img: require("../../../images/imagesAmericaSul/valle1.jpg")},
-        {img: require("../../../images/imagesAmericaSul/valle2.jpg")},
-        {img: require("../../../images/imagesAmericaSul/valle3.jpg")},
-        {img: require("../../../images/imagesAmericaSul/valle4.jpg")},
+        {img: require("../../../images/imagesAmericaSul/valle1.jpg")},//
+        {img: require("../../../images/imagesAmericaSul/valle2.jpg")},//
+        {img: require("../../../images/imagesAmericaSul/valle3.jpg")},//
+        {img: require("../../../images/imagesAmericaSul/valle4.jpg")},//
      ]
     },
     {
@@ -73,10 +73,10 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaSul/bolivia5.jpg"),
       title: "Isla Del Sol",
       carousel: [
-        {img: require("../../../images/imagesAmericaSul/isladelsol1.jpg")},
-        {img: require("../../../images/imagesAmericaSul/isladelsol2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/isladelsol1.jpg")},//
+        {img: require("../../../images/imagesAmericaSul/isladelsol2.jpg")},//
         {img: require("../../../images/imagesAmericaSul/isladelsol3.jpg")},
-        {img: require("../../../images/imagesAmericaSul/isladelsol4.jpg")},
+        {img: require("../../../images/imagesAmericaSul/isladelsol4.jpg")},//
      ]
     },
   ];

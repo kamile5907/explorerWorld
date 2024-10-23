@@ -30,7 +30,7 @@ const SPACING = 20;
       title: "Parque Marrocoy",
       carousel: [
         {img: require("../../../images/imagesAmericaSul/marrocoy1.jpg")},
-        {img: require("../../../images/imagesAmericaSul/marrocoy2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/marrocoy2.jpg")},//
         {img: require("../../../images/imagesAmericaSul/marrocoy3.jpg")},
         {img: require("../../../images/imagesAmericaSul/marrocoy4.jpg")},
      ]
@@ -43,7 +43,7 @@ const SPACING = 20;
         {img: require("../../../images/imagesAmericaSul/tucacas1.jpg")},
         {img: require("../../../images/imagesAmericaSul/tucacas2.jpg")},
         {img: require("../../../images/imagesAmericaSul/tucacas3.jpg")},
-        {img: require("../../../images/imagesAmericaSul/tucacas4.jpg")},
+        {img: require("../../../images/imagesAmericaSul/tucacas4.jpg")},//
      ]
     },
     {
@@ -62,10 +62,10 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaSul/venezuela4.jpg"),
       title: "Isla Tortuga",
       carousel: [
-        {img: require("../../../images/imagesAmericaSul/tortuga1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/tortuga1.jpg")},//
         {img: require("../../../images/imagesAmericaSul/tortuga2.jpg")},
         {img: require("../../../images/imagesAmericaSul/tortuga3.jpg")},
-        {img: require("../../../images/imagesAmericaSul/tortuga4.jpg")},
+        {img: require("../../../images/imagesAmericaSul/tortuga4.jpg")},//
      ]
     },
     {
@@ -73,8 +73,8 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaSul/venezuela5.jpg"),
       title: "Santo Angel",
       carousel: [
-        {img: require("../../../images/imagesAmericaSul/santoangel1.jpg")},
-        {img: require("../../../images/imagesAmericaSul/santoangel2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/santoangel1.jpg")},//
+        {img: require("../../../images/imagesAmericaSul/santoangel2.jpg")},//
         {img: require("../../../images/imagesAmericaSul/santoangel3.jpg")},
         {img: require("../../../images/imagesAmericaSul/santoangel4.jpg")},
      ]

@@ -30,22 +30,22 @@ const places = [
     source: require("../../../images/Africa/africaSul1.jpg"),
     title: "Johnnesburg",
     carousel: [
-      {img: require("../../../images/Asia/muralha1.jpg")},
-      {img: require("../../../images/Asia/muralha2.jpg")},
-      {img: require("../../../images/Asia/muralha3.jpg")},
-      {img: require("../../../images/Asia/muralha4.jpg")},
+      {img: require("../../../images/Africa/johnnesburg1.jpg")},
+      {img: require("../../../images/Africa/johnnesburg2.jpg")},
+      {img: require("../../../images/Africa/johnnesburg3.jpg")},
+      {img: require("../../../images/Africa/johnnesburg4.jpg")},
    ]
   },
   
   {
-    id: "Kimberley",
+    id: "Parque Nacional Kruger",
     source: require("../../../images/Africa/africaSul2.jpg"),
-    title: "Kimberley",
+    title: "Parque Nacional Kruger",
     carousel: [
-      {img: require("../../../images/Asia/muralha1.jpg")},
-      {img: require("../../../images/Asia/muralha2.jpg")},
-      {img: require("../../../images/Asia/muralha3.jpg")},
-      {img: require("../../../images/Asia/muralha4.jpg")},
+      {img: require("../../../images/Africa/kruger1.jpg")},
+      {img: require("../../../images/Africa/kruger2.jpg")},
+      {img: require("../../../images/Africa/kruger3.jpg")},
+      {img: require("../../../images/Africa/kruger4.jpg")},
    ]
   },
   {
@@ -53,10 +53,10 @@ const places = [
     source: require("../../../images/Africa/africaSul3.jpg"),
     title: "Porto Elisabeth", 
     carousel: [
-      {img: require("../../../images/Asia/muralha1.jpg")},
-      {img: require("../../../images/Asia/muralha2.jpg")},
-      {img: require("../../../images/Asia/muralha3.jpg")},
-      {img: require("../../../images/Asia/muralha4.jpg")},
+      {img: require("../../../images/Africa/elizabeth1.jpg")},
+      {img: require("../../../images/Africa/elizabeth2.jpg")},
+      {img: require("../../../images/Africa/elizabeth3.jpg")},
+      {img: require("../../../images/Africa/elizabeth4.jpg")},
    ]
   },
   {
@@ -64,10 +64,10 @@ const places = [
     source: require("../../../images/Africa/africaSul4.jpg"),
     title: "Cidade Do Cabo",
     carousel: [
-      {img: require("../../../images/Asia/muralha1.jpg")},
-      {img: require("../../../images/Asia/muralha2.jpg")},
-      {img: require("../../../images/Asia/muralha3.jpg")},
-      {img: require("../../../images/Asia/muralha4.jpg")},
+      {img: require("../../../images/Africa/cabo1.jpg")},
+      {img: require("../../../images/Africa/cabo2.jpg")},
+      {img: require("../../../images/Africa/cabo3.jpg")},
+      {img: require("../../../images/Africa/cabo4.jpg")},
    ]
   },
  

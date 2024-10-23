@@ -36,7 +36,7 @@ const places = [
    ]
   },
   {
-    id: "Guime le voile de la mariee ",
+    id: "Guime le voile de la mariee",
     source: require("../../../images/Africa/guine2.jpg"),
     title: "Guime le voile de la mariee ",
     carousel: [

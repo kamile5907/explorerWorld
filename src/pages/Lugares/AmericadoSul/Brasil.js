@@ -29,10 +29,10 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaSul/brasil1.jpg"),
       title: "Cristo Redentor",
       carousel: [
-        {img: require("../../../images/imagesAmericaSul/cristoredentor1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/cristoredentor1.jpg")},//
         {img: require("../../../images/imagesAmericaSul/cristoredentor2.jpg")},
         {img: require("../../../images/imagesAmericaSul/cristoredentor3.jpg")},
-        {img: require("../../../images/imagesAmericaSul/cristoredentor4.jpg")},
+        {img: require("../../../images/imagesAmericaSul/cristoredentor4.jpg")},//
      ]
     },
     {
@@ -40,10 +40,10 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaSul/brasil2.jpg"),
       title: "Parque Ibirapuera",
       carousel: [
-        {img: require("../../../images/imagesAmericaSul/parqueibirapuera.jpg")},
-        {img: require("../../../images/imagesAmericaSul/parqueibirapuera1.jpg")},
-        {img: require("../../../images/imagesAmericaSul/parqueibirapuera3.jpg")},
-        {img: require("../../../images/imagesAmericaSul/parqueibirapuera4.jpg")},
+        {img: require("../../../images/imagesAmericaSul/parqueibirapuera.jpg")},//
+        {img: require("../../../images/imagesAmericaSul/parqueibirapuera1.jpg")},//
+        {img: require("../../../images/imagesAmericaSul/parqueibirapuera3.jpg")},//
+        {img: require("../../../images/imagesAmericaSul/parqueibirapuera4.jpg")},//
      ]
     },
     {
@@ -52,9 +52,9 @@ const SPACING = 20;
       title: "Jardim Botânico - Curitiba",
       carousel: [
         {img: require("../../../images/imagesAmericaSul/jardimbotanico1.jpg")},
-        {img: require("../../../images/imagesAmericaSul/jadimbotanico2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/jadimbotanico2.jpg")},//
         {img: require("../../../images/imagesAmericaSul/jadimbotanico3.jpg")},
-        {img: require("../../../images/imagesAmericaSul/jardimbotanico4.jpg")},
+        {img: require("../../../images/imagesAmericaSul/jardimbotanico4.jpg")},//
      ]
     },
     {
@@ -62,9 +62,9 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaSul/brasil4.jpg"),
       title: "Cataratas do Iguaçu",
       carousel: [
-        {img: require("../../../images/imagesAmericaSul/cataratasdoiguaçu1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/cataratasdoiguaçu1.jpg")},//
         {img: require("../../../images/imagesAmericaSul/cataratasdoiguaçu2.jpg")},
-        {img: require("../../../images/imagesAmericaSul/cataratasdoiguaçu3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/cataratasdoiguaçu3.jpg")},//
         {img: require("../../../images/imagesAmericaSul/cataratasdoiguaçu4.jpg")},
      ]
     },
@@ -74,7 +74,7 @@ const SPACING = 20;
       title: "Beto Carrero World",
       carousel: [
         {img: require("../../../images/imagesAmericaSul/betocarrero1.jpg")},
-        {img: require("../../../images/imagesAmericaSul/betocarrero2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/betocarrero2.jpg")},//
         {img: require("../../../images/imagesAmericaSul/betocarrero3.jpg")},
         {img: require("../../../images/imagesAmericaSul/betocarrero4.jpg")},
      ]

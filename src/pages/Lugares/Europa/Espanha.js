@@ -31,8 +31,8 @@ const places= [
     carousel: [
     {img: require("../../../images/Europa/prado1.jpg")},
     {img: require("../../../images/Europa/prado2.jpg")},
-    {img: require("../../../images/Europa/prado3.jpg")},
-    {img: require("../../../images/Europa/prado4.jpg")},
+    {img: require("../../../images/Europa/prado3.jpg")},//
+    {img: require("../../../images/Europa/prado4.jpg")},//
  ] },
   {
     id: "Cidade das Artes e das Ciências",
@@ -50,7 +50,7 @@ const places= [
     source: require("../../../images/Europa/espanha3.jpg"),
     title: "Catedral de Santiago de Compostela",
     carousel: [
-      {img: require("../../../images/Europa/compostela1.jpg")},
+      {img: require("../../../images/Europa/compostela1.jpg")},//
       {img: require("../../../images/Europa/compostela2.jpg")},
       {img: require("../../../images/Europa/compostela3.jpg")},
       {img: require("../../../images/Europa/compostela4.jpg")},
@@ -74,9 +74,9 @@ const places= [
     title: "Museu Guggenheim Bilbao",
     carousel: [
       {img: require("../../../images/Europa/bilbao1.jpg")},
-      {img: require("../../../images/Europa/bilbao2.jpg")},
+      {img: require("../../../images/Europa/bilbao2.jpg")},//
       {img: require("../../../images/Europa/bilbao3.jpg")},
-      {img: require("../../../images/Europa/bilbao4.jpg")},
+      {img: require("../../../images/Europa/bilbao4.jpg")},//
     ]
   },
 ];

@@ -31,34 +31,34 @@ const SPACING = 20;
       carousel: [
         {img: require("../../../images/imagesAmericaCentro/santaanaVolcano1.jpg")},
         {img: require("../../../images/imagesAmericaCentro/santaanavolcano2.jpg")},
-        {img: require("../../../images/imagesAmericaCentro/santaanavolcano3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/santaanavolcano3.jpg")},//
         {img: require("../../../images/imagesAmericaCentro/santaanavolcano4.jpg")},
      ]
     },
     {
-      id: "Lago de Coate Peque",
+      id: "Lago De Coate Peque",
       source: require("../../../images/imagesAmericaCentro/elsalvador2.jpg"),
       title: "Lago De Coate Peque",
       carousel: [
         {img: require("../../../images/imagesAmericaCentro/coatepeque1.jpg")},
-        {img: require("../../../images/imagesAmericaCentro/coatepeque2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/coatepeque2.jpg")},//
         {img: require("../../../images/imagesAmericaCentro/coatepeque3.jpg")},
         {img: require("../../../images/imagesAmericaCentro/coatepeque4.jpg")},
      ]
     },
     {
-      id: "Joya de Ceren",
+      id: "Joya De Ceren",
       source: require("../../../images/imagesAmericaCentro/elsalvador3.jpg"),
       title: "Joya De Ceren",
       carousel: [
-        {img: require("../../../images/imagesAmericaCentro/joyadeceren1.jpg")},
-        {img: require("../../../images/imagesAmericaCentro/joyadeceren2.jpg")},
-        {img: require("../../../images/imagesAmericaCentro/joyadeceren3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/joyadeceren1.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/joyadeceren2.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/joyadeceren3.jpg")},//
         {img: require("../../../images/imagesAmericaCentro/joyadeceren4.jpg")},
      ]
     },
     {
-      id: "Cuevas de Moncagua",
+      id: "Cuevas De Moncagua",
       source: require("../../../images/imagesAmericaCentro/elsalvador4.jpg"),
       title: "Cuevas De Moncagua",
       carousel: [
@@ -73,9 +73,9 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaCentro/elsalvador5.jpg"),
       title: "Tazumal",
       carousel: [
-        {img: require("../../../images/imagesAmericaCentro/tazumal1.jpg")},
-        {img: require("../../../images/imagesAmericaCentro/tazumal2.jpg")},
-        {img: require("../../../images/imagesAmericaCentro/tazumal3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/tazumal1.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/tazumal2.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/tazumal3.jpg")},//
         {img: require("../../../images/imagesAmericaCentro/tazumal4.jpg")},
      ]
     },

@@ -38,7 +38,7 @@ const imagens = [
     source: require("../images/Africa/africa.jpg"),
     title: "África",
     rota: "Africa",
-    logo: require("../images/LogoAfrica.png"),
+    logo: require("../images/Logo.png"),
   },
   {
     source: require("../images/Europa/europa.jpg"),
@@ -50,7 +50,7 @@ const imagens = [
     source: require("../images/Asia/asia.jpg"),
     title: "Ásia",
     rota: "Asia",
-    logo: require("../images/LogoAsia.png"),
+    logo: require("../images/Logo.png"),
   },
   {
     source: require("../images/Oceania/oceania.jpg"),
@@ -151,7 +151,7 @@ export default function Home() {
 
           const scrollY = scrollX.interpolate({
             inputRange,
-            outputRange: [0, -50, 0],
+            outputRange: [50, 0, 50],
           });
 
           const textTranslateX = scrollX.interpolate({

@@ -29,10 +29,10 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaNorte/canada1.jpg"),
       title: "Torre CN",
       carousel: [
-        {img: require("../../../images/imagesAmericaNorte/torrecn5.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/torrecn6.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/torrecn7.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/torredn4.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/torrecn5.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/torrecn6.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/torrecn7.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/torredn4.jpg")},//
      ]
     },
     {
@@ -40,21 +40,21 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaNorte/canada2.jpg"),
       title: "Museu Real de Ontário",
       carousel: [
-        {img: require("../../../images/imagesAmericaNorte/museucanada4.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/museucanada5.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/museucanada6.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/museucanada7.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/museucanada4.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/museucanada5.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/museucanada6.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/museucanada7.jpg")},//
      ]
     },
     {
-      id: "Ripley's Aquarium of Canada",
+      id: "Ripley’s Aquarium of Canada",
       source: require("../../../images/imagesAmericaNorte/canada3.jpg"),
       title: "Ripley’s Aquarium of Canada",
       carousel: [
-        {img: require("../../../images/imagesAmericaNorte/aquariumcanada4.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/aquariumcanada5.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/aquariumcanada6.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/aquariumcanada7.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/aquariumcanada4.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/aquariumcanada5.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/aquariumcanada6.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/aquariumcanada7.jpg")},//
      ]
     },
     {
@@ -62,10 +62,10 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaNorte/canada4.jpg"),
       title: "Parque de Stanley",
       carousel: [
-        {img: require("../../../images/imagesAmericaNorte/parquecanada4.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/parquecanada5.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/parquecanada6.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/parquecanada7.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/parquecanada4.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/parquecanada5.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/parquecanada6.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/parquecanada7.jpg")},//
      ]
     },
     {
@@ -75,8 +75,8 @@ const SPACING = 20;
       carousel: [
         {img: require("../../../images/imagesAmericaNorte/nacionalcanada4.jpg")},
         {img: require("../../../images/imagesAmericaNorte/parquenacional8.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/nacionalcanada6.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/parquenacional9.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/nacionalcanada6.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/parquenacional9.jpg")},//
      ]
     },
   ];

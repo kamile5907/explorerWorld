@@ -29,10 +29,10 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaCentro/nicaragua1.jpg"),
       title: "Vulcão Masaya",
       carousel: [
-        {img: require("../../../images/Asia/muralha1.jpg")},
-        {img: require("../../../images/Asia/muralha2.jpg")},
-        {img: require("../../../images/Asia/muralha3.jpg")},
-        {img: require("../../../images/Asia/muralha4.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/masaya1.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/masaya2.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/masaya3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/masaya4.jpg")},
      ]
     },
     {
@@ -40,10 +40,10 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaCentro/nicaragua2.jpg"),
       title: "Little Corn Island",
       carousel: [
-        {img: require("../../../images/Asia/muralha1.jpg")},
-        {img: require("../../../images/Asia/muralha2.jpg")},
-        {img: require("../../../images/Asia/muralha3.jpg")},
-        {img: require("../../../images/Asia/muralha4.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/cornisland1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/cornisland2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/cornisland3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/cornisland4.jpg")},
      ]
     },
     {
@@ -51,32 +51,32 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaCentro/nicaragua3.jpg"),
       title: "Isletas de Granada",
       carousel: [
-        {img: require("../../../images/Asia/muralha1.jpg")},
-        {img: require("../../../images/Asia/muralha2.jpg")},
-        {img: require("../../../images/Asia/muralha3.jpg")},
-        {img: require("../../../images/Asia/muralha4.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/granada1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/granada2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/granada3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/granada4.jpg")},
      ]
     },
     {
-      id: "Cerro Negro",
+      id: "Cerro negro",
       source: require("../../../images/imagesAmericaCentro/nicaragua4.jpg"),
       title: "Cerro negro",
       carousel: [
-        {img: require("../../../images/Asia/muralha1.jpg")},
-        {img: require("../../../images/Asia/muralha2.jpg")},
-        {img: require("../../../images/Asia/muralha3.jpg")},
-        {img: require("../../../images/Asia/muralha4.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/cerronegro1.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/cerronegro2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/cerronegro3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/cerronegro4.jpg")},
      ]
     },
     {
-      id: "Catedral de León",
+      id: "Catedral De León",
       source: require("../../../images/imagesAmericaCentro/nicaragua5.jpg"),
       title: "Catedral De León",
       carousel: [
-        {img: require("../../../images/Asia/muralha1.jpg")},
-        {img: require("../../../images/Asia/muralha2.jpg")},
-        {img: require("../../../images/Asia/muralha3.jpg")},
-        {img: require("../../../images/Asia/muralha4.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/leon1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/leon2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/leon3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/leon4.jpg")},
      ]
     },
   ];

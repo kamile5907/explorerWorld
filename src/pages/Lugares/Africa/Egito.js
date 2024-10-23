@@ -37,7 +37,7 @@ const places = [
   },
  
   {
-    id: "DescriptionPage",
+    id: "Alexandria",
     source: require("../../../images/Africa/egito2.jpg"),
     title: "Alexandria",
     carousel: [

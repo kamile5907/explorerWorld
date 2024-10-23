@@ -32,7 +32,7 @@ const places= [
     {img: require("../../../images/Asia/burj1.jpg")},
     {img: require("../../../images/Asia/burj2.jpg")},
     {img: require("../../../images/Asia/burj3.jpg")},
-    {img: require("../../../images/Asia/burj4.jpg")},
+    {img: require("../../../images/Asia/burj4.jpg")},//
  ] },
   {
     id: "Aquaventure Waterpark",
@@ -52,7 +52,7 @@ const places= [
     carousel: [
       {img: require("../../../images/Asia/ferrari1.jpg")},
       {img: require("../../../images/Asia/ferrari2.jpg")},
-      {img: require("../../../images/Asia/ferrari3.jpg")},
+      {img: require("../../../images/Asia/ferrari3.jpg")},//
       {img: require("../../../images/Asia/ferrari4.jpg")},
     ]
   },
@@ -61,10 +61,10 @@ const places= [
       source: require("../../../images/Asia/emirados4.jpg"),
       title: "Museum of The Future",
     carousel: [
-      {img: require("../../../images/Asia/future1.jpg")},
-      {img: require("../../../images/Asia/future2.jpg")},
+      {img: require("../../../images/Asia/future1.jpg")},//
+      {img: require("../../../images/Asia/future2.jpg")},//
       {img: require("../../../images/Asia/future3.jpg")},
-      {img: require("../../../images/Asia/future4.jpg")},
+      {img: require("../../../images/Asia/future4.jpg")},//
     ]
   },
   {

@@ -29,10 +29,10 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaCentro/panama1.jpg"),
       title:"Ruins Viejo",
       carousel: [
-        {img: require("../../../images/Asia/muralha1.jpg")},
-        {img: require("../../../images/Asia/muralha2.jpg")},
-        {img: require("../../../images/Asia/muralha3.jpg")},
-        {img: require("../../../images/Asia/muralha4.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/ruinsviejo1.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/ruinsviejo2.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/ruinsviejo3.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/ruinsviejo4.jpg")},
      ]
     },
     {
@@ -40,10 +40,10 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaCentro/panama2.jpg"),
       title: "Bocas Del Toro",
       carousel: [
-        {img: require("../../../images/Asia/muralha1.jpg")},
-        {img: require("../../../images/Asia/muralha2.jpg")},
-        {img: require("../../../images/Asia/muralha3.jpg")},
-        {img: require("../../../images/Asia/muralha4.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/toro1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/toro2.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/toro3.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/toro4.jpg")},
      ]
     },
     {
@@ -51,10 +51,10 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaCentro/panama3.jpg"),
       title: "Biomuseu Panamá",
       carousel: [
-        {img: require("../../../images/Asia/muralha1.jpg")},
-        {img: require("../../../images/Asia/muralha2.jpg")},
-        {img: require("../../../images/Asia/muralha3.jpg")},
-        {img: require("../../../images/Asia/muralha4.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/biomuseu1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/biomuseu2.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/biomuseu3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/biomuseu4.jpg")},
      ]
     },
     {
@@ -62,10 +62,10 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaCentro/panama4.jpg"),
       title: "Archipelago De San Blas",
       carousel: [
-        {img: require("../../../images/Asia/muralha1.jpg")},
-        {img: require("../../../images/Asia/muralha2.jpg")},
-        {img: require("../../../images/Asia/muralha3.jpg")},
-        {img: require("../../../images/Asia/muralha4.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/sanblas1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/sanblas2.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/sanblas3.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/sanblas4.jpg")},
      ]
     },
     {
@@ -73,10 +73,10 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaCentro/panama5.jpg"),
       title: "Coiba",
       carousel: [
-        {img: require("../../../images/Asia/muralha1.jpg")},
-        {img: require("../../../images/Asia/muralha2.jpg")},
-        {img: require("../../../images/Asia/muralha3.jpg")},
-        {img: require("../../../images/Asia/muralha4.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/coiba1.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/coiba2.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/coiba3.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/coiba4.jpg")},//
      ]
     },
   ];

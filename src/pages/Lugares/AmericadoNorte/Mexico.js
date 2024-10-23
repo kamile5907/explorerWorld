@@ -31,7 +31,7 @@ const SPACING = 20;
       carousel: [
         {img: require("../../../images/imagesAmericaNorte/chichenmexico4.jpg")},
         {img: require("../../../images/imagesAmericaNorte/chichenmexico5.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/chichenmexico6.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/chichenmexico6.jpg")},//
         {img: require("../../../images/imagesAmericaNorte/chichenmexico7.jpg")},
      ]
     },
@@ -51,10 +51,10 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaNorte/mexico3.jpg"),
       title: "Museu Soumaya",
       carousel: [
-        {img: require("../../../images/imagesAmericaNorte/museumexico4.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/museumexico4.jpg")},//
         {img: require("../../../images/imagesAmericaNorte/museumexico5.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/museumexico6.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/museumexico7.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/museumexico6.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/museumexico7.jpg")},//
      ]
     },
     {
@@ -62,9 +62,9 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaNorte/mexico4.jpg"),
       title: "Castelo de Chapultepec",
       carousel: [
-        {img: require("../../../images/imagesAmericaNorte/castelomexico4.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/castelomexico4.jpg")},//
         {img: require("../../../images/imagesAmericaNorte/castelomexico5.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/castelomexico6.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/castelomexico6.jpg")},//
         {img: require("../../../images/imagesAmericaNorte/castelomexico7.jpg")},
      ]
     },
@@ -73,10 +73,10 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaNorte/mexico5.jpg"),
       title: "Zona Arqueológica de Tulum",
       carousel: [
-        {img: require("../../../images/imagesAmericaNorte/zonamexico4.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/zonamexico4.jpg")},//
         {img: require("../../../images/imagesAmericaNorte/zonamexico5.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/zonamexico6.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/zonamexico7.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/zonamexico6.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/zonamexico7.jpg")},//
      ]
     },
   ];

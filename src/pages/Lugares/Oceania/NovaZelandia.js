@@ -51,7 +51,7 @@ const places = [
     carousel: [
       {img: require("../../../images/Oceania/sky1.jpg")},
       {img: require("../../../images/Oceania/sky2.jpg")},
-      {img: require("../../../images/Oceania/sky3.jpg")},
+      {img: require("../../../images/Oceania/sky3.jpg")},//
       {img: require("../../../images/Oceania/sky4.jpg")},
    ] },
   {
@@ -61,7 +61,7 @@ const places = [
     carousel: [
       {img: require("../../../images/Oceania/waiotapu1.jpg")},
       {img: require("../../../images/Oceania/waiotapu2.jpg")},
-      {img: require("../../../images/Oceania/waiotapu3.jpg")},
+      {img: require("../../../images/Oceania/waiotapu3.jpg")},//
       {img: require("../../../images/Oceania/waiotapu4.jpg")},
    ] },
 ];

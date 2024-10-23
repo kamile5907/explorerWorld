@@ -29,7 +29,7 @@ const places= [
     source: require("../../../images/Europa/inglaterra1.jpg"),
     title: "Albert Dock",
     carousel: [
-    {img: require("../../../images/Europa/albert1.jpg")},
+    {img: require("../../../images/Europa/albert1.jpg")},//
     {img: require("../../../images/Europa/albert2.jpg")},
     {img: require("../../../images/Europa/albert3.jpg")},
     {img: require("../../../images/Europa/albert4.jpg")},
@@ -39,7 +39,7 @@ const places= [
     source: require("../../../images/Europa/inglaterra2.jpg"),
     title: "Tower Bridge",
     carousel: [
-      {img: require("../../../images/Europa/tower1.jpg")},
+      {img: require("../../../images/Europa/tower1.jpg")},//
       {img: require("../../../images/Europa/tower2.jpg")},
       {img: require("../../../images/Europa/tower3.jpg")},
       {img: require("../../../images/Europa/tower4.jpg")},
@@ -53,7 +53,7 @@ const places= [
       {img: require("../../../images/Europa/palacio1.jpg")},
       {img: require("../../../images/Europa/palacio2.jpg")},
       {img: require("../../../images/Europa/palacio3.jpg")},
-      {img: require("../../../images/Europa/palacio4.jpg")},
+      {img: require("../../../images/Europa/palacio4.jpg")},//
     ]
   },
   {
@@ -62,9 +62,9 @@ const places= [
     title: "Big Ben",
     carousel: [
       {img: require("../../../images/Europa/bigben1.jpg")},
-      {img: require("../../../images/Europa/bigben2.jpg")},
+      {img: require("../../../images/Europa/bigben2.jpg")},//
       {img: require("../../../images/Europa/bigben3.jpg")},
-      {img: require("../../../images/Europa/bigben4.jpg")},
+      {img: require("../../../images/Europa/bigben4.jpg")},//
     ]
   },
   {

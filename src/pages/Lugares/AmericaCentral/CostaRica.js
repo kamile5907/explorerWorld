@@ -30,7 +30,7 @@ const SPACING = 20;
       title: "Teatro Nacional da Costa Rica",
       carousel: [
         {img: require("../../../images/imagesAmericaCentro/teatronacional1.jpg")},
-        {img: require("../../../images/imagesAmericaCentro/teatrocostarica2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/teatrocostarica2.jpg")},//
         {img: require("../../../images/imagesAmericaCentro/teatrocostarica3.jpg")},
         {img: require("../../../images/imagesAmericaCentro/teatrocostarica4.jpg")},
      ]
@@ -41,9 +41,9 @@ const SPACING = 20;
       title: "Playa Hermosa",
       carousel: [
         {img: require("../../../images/imagesAmericaCentro/playahermosa1.jpg")},
-        {img: require("../../../images/imagesAmericaCentro/playahermosa2.jpg")},
-        {img: require("../../../images/imagesAmericaCentro/playahermosa3.jpg")},
-        {img: require("../../../images/imagesAmericaCentro/playahermosa4.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/playahermosa2.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/playahermosa3.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/playahermosa4.jpg")},//
      ]
     },
     {
@@ -52,7 +52,7 @@ const SPACING = 20;
       title: "Rio Celeste",
       carousel: [
         {img: require("../../../images/imagesAmericaCentro/rioceleste1.jpg")},
-        {img: require("../../../images/imagesAmericaCentro/rioceleste2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/rioceleste2.jpg")},//
         {img: require("../../../images/imagesAmericaCentro/rioceleste3.jpg")},
         {img: require("../../../images/imagesAmericaCentro/rioceleste4.jpg")},
      ]
@@ -64,7 +64,7 @@ const SPACING = 20;
       carousel: [
         {img: require("../../../images/imagesAmericaCentro/montecverdecloud1.jpg")},
         {img: require("../../../images/imagesAmericaCentro/monteverde2.jpg")},
-        {img: require("../../../images/imagesAmericaCentro/monteverde3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/monteverde3.jpg")},//
         {img: require("../../../images/imagesAmericaCentro/monteverde4.jpg")},
      ]
     },

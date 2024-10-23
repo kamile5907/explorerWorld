@@ -29,10 +29,10 @@ const places = [
     source: require("../../../images/Africa/nigeria1.jpg"),
     title: "Mount Nimba Strict Nature Reserve",
     carousel: [
-      {img: require("../../../images/Asia/muralha1.jpg")},
-      {img: require("../../../images/Asia/muralha2.jpg")},
-      {img: require("../../../images/Asia/muralha3.jpg")},
-      {img: require("../../../images/Asia/muralha4.jpg")},
+      {img: require("../../../images/Africa/nimba1.jpg")},
+      {img: require("../../../images/Africa/nimba2.jpg")},
+      {img: require("../../../images/Africa/nimba3.jpg")},
+      {img: require("../../../images/Africa/nimba4.jpg")},
    ]
   },
   {
@@ -40,22 +40,22 @@ const places = [
     source: require("../../../images/Africa/nigeria2.jpg"),
     title: "Lagos",
     carousel: [
-      {img: require("../../../images/Asia/muralha1.jpg")},
-      {img: require("../../../images/Asia/muralha2.jpg")},
-      {img: require("../../../images/Asia/muralha3.jpg")},
-      {img: require("../../../images/Asia/muralha4.jpg")},
+      {img: require("../../../images/Africa/lagos1.jpg")},
+      {img: require("../../../images/Africa/lagos2.jpg")},
+      {img: require("../../../images/Africa/lagos3.jpg")},
+      {img: require("../../../images/Africa/lagos4.jpg")},
    ]
   },
 
   {
-    id: "Ile Kassa",
+    id: "Olumo Rock Tourist Centre",
     source: require("../../../images/Africa/nigeria3.jpg"),
-    title: "Ile Kassa", 
+    title: "Olumo Rock Tourist Centre", 
     carousel: [
-      {img: require("../../../images/Asia/muralha1.jpg")},
-      {img: require("../../../images/Asia/muralha2.jpg")},
-      {img: require("../../../images/Asia/muralha3.jpg")},
-      {img: require("../../../images/Asia/muralha4.jpg")},
+      {img: require("../../../images/Africa/olumo1.jpg")},
+      {img: require("../../../images/Africa/olumo2.jpg")},
+      {img: require("../../../images/Africa/olumo3.jpg")},
+      {img: require("../../../images/Africa/olumo4.jpg")},
    ]
   },
   {
@@ -63,10 +63,10 @@ const places = [
     source: require("../../../images/Africa/nigeria4.jpg"),
     title: "Cataratas",
     carousel: [
-      {img: require("../../../images/Asia/muralha1.jpg")},
-      {img: require("../../../images/Asia/muralha2.jpg")},
-      {img: require("../../../images/Asia/muralha3.jpg")},
-      {img: require("../../../images/Asia/muralha4.jpg")},
+      {img: require("../../../images/Africa/cataratas1.jpg")},
+      {img: require("../../../images/Africa/cataratas2.jpg")},
+      {img: require("../../../images/Africa/cataratas3.jpg")},
+      {img: require("../../../images/Africa/cataratas4.jpg")},
    ]
   },
 ];

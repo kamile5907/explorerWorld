@@ -30,9 +30,9 @@ const SPACING = 20;
       title: "Central Park",
       carousel: [
         {img: require("../../../images/imagesAmericaNorte/centralpark5.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/centralpark4.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/centralpark6.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/centralpark7.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/centralpark4.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/centralpark6.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/centralpark7.jpg")},//
      ]
     },
     {
@@ -42,8 +42,8 @@ const SPACING = 20;
       carousel: [
         {img: require("../../../images/imagesAmericaNorte/estatualiberdade4.jpg")},
         {img: require("../../../images/imagesAmericaNorte/estatualiberdade5.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/estatualiberdade6.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/estatualiberdade7.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/estatualiberdade6.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/estatualiberdade7.jpg")},//
      ]
     },
     {
@@ -51,10 +51,10 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaNorte/estadosunidos3.jpg"),
       title: "Ponte Golden Gate",
       carousel: [
-        {img: require("../../../images/imagesAmericaNorte/pontegolden4.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/pontegolden5.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/pontegolden4.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/pontegolden5.jpg")},//
         {img: require("../../../images/imagesAmericaNorte/pontegolden6.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/pontegolden7.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/pontegolden7.jpg")},//
      ]
     },
     {
@@ -63,8 +63,8 @@ const SPACING = 20;
       title: "Times Square",
       carousel: [
         {img: require("../../../images/imagesAmericaNorte/timesquare4.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/timesquare5.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/timesquare6.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/timesquare5.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/timesquare6.jpg")},//
         {img: require("../../../images/imagesAmericaNorte/timesquare7.jpg")},
      ]
     },
@@ -74,9 +74,9 @@ const SPACING = 20;
       title: "Walt Disney World Resort",
       carousel: [
         {img: require("../../../images/imagesAmericaNorte/disney4.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/disney5.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/disney6.jpg")},
-        {img: require("../../../images/imagesAmericaNorte/disney7.jpg")},
+        {img: require("../../../images/imagesAmericaNorte/disney5.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/disney6.jpg")},//
+        {img: require("../../../images/imagesAmericaNorte/disney7.jpg")},//
      ]
     },
   ];

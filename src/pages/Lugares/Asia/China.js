@@ -61,7 +61,7 @@ const places= [
     source: require("../../../images/Asia/china4.jpg"),
     title: "Hong Kong Disneyland",
     carousel: [
-      {img: require("../../../images/Asia/hongkong1.jpg")},
+      {img: require("../../../images/Asia/hongkong1.jpg")},//
       {img: require("../../../images/Asia/hongkong2.jpg")},
       {img: require("../../../images/Asia/hongkong3.jpg")},
       {img: require("../../../images/Asia/hongkong4.jpg")},
@@ -73,7 +73,7 @@ const places= [
     source: require("../../../images/Asia/china5.jpg"),
     title: "Grande Buda de Leshan",
     carousel: [
-      {img: require("../../../images/Asia/buda1.jpg")},
+      {img: require("../../../images/Asia/buda1.jpg")},//
       {img: require("../../../images/Asia/buda2.jpg")},
       {img: require("../../../images/Asia/buda3.jpg")},
       {img: require("../../../images/Asia/buda4.jpg")},

@@ -32,17 +32,17 @@ const places= [
     {img: require("../../../images/Europa/jardim1.jpg")},
     {img: require("../../../images/Europa/jardim2.jpg")},
     {img: require("../../../images/Europa/jardim3.jpg")},
-    {img: require("../../../images/Europa/jardim4.jpg")},
+    {img: require("../../../images/Europa/jardim4.jpg")},//
  ] },
   {
     id: "Torre Eiffel",
     source: require("../../../images/Europa/frança3.jpg"),
     title: "Torre Eiffel",
     carousel: [
-      {img: require("../../../images/Europa/torre1.jpg")},
+      {img: require("../../../images/Europa/torre1.jpg")},//
       {img: require("../../../images/Europa/torre2.jpg")},
       {img: require("../../../images/Europa/torre3.jpg")},
-      {img: require("../../../images/Europa/torre4.jpg")},
+      {img: require("../../../images/Europa/torre4.jpg")},//
     ]
   },
   {
@@ -62,9 +62,9 @@ const places= [
     title: "Museu do Louvre",
     carousel: [
       {img: require("../../../images/Europa/louvre1.jpg")},
-      {img: require("../../../images/Europa/louvre2.jpg")},
+      {img: require("../../../images/Europa/louvre2.jpg")},//
       {img: require("../../../images/Europa/louvre3.jpg")},
-      {img: require("../../../images/Europa/louvre4.jpg")},
+      {img: require("../../../images/Europa/louvre4.jpg")},//
     ]
   },
   {
@@ -76,7 +76,7 @@ const places= [
       {img: require("../../../images/Europa/disney1.jpg")},
       {img: require("../../../images/Europa/disney2.jpg")},
       {img: require("../../../images/Europa/disney3.jpg")},
-      {img: require("../../../images/Europa/disney4.jpg")},
+      {img: require("../../../images/Europa/disney4.jpg")},//
     ]
   },
 ];

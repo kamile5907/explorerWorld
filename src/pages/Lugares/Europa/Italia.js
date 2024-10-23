@@ -50,7 +50,7 @@ const places= [
     source: require("../../../images/Europa/italia3.jpg"),
     title: "Catedral de Milão",
     carousel: [
-      {img: require("../../../images/Europa/catedral1.jpg")},
+      {img: require("../../../images/Europa/catedral1.jpg")},//
       {img: require("../../../images/Europa/catedral2.jpg")},
       {img: require("../../../images/Europa/catedral3.jpg")},
       {img: require("../../../images/Europa/catedral4.jpg")},

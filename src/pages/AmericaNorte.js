@@ -72,7 +72,7 @@ export default function AmericaNorte() {
           style={stylesContinente.topImage}
         />
 
-        <TouchableOpacity onPress={() => navigation.navigate("Home")}>
+        <TouchableOpacity onPress={() => navigation.navigate("Home")} style={stylesContinente.btnVoltar}>
           <MaterialCommunityIcons name="arrow-left" size={35} color={"white"} />
         </TouchableOpacity>
 

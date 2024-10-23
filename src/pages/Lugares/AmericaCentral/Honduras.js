@@ -31,8 +31,8 @@ const SPACING = 20;
       carousel: [
         {img: require("../../../images/imagesAmericaCentro/cochinos1.jpg")},
         {img: require("../../../images/imagesAmericaCentro/cochinos2.jpg")},
-        {img: require("../../../images/imagesAmericaCentro/cochinos3.jpg")},
-        {img: require("../../../images/imagesAmericaCentro/cochinos4.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/cochinos3.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/cochinos4.jpg")},//
      ]
     },
     {
@@ -63,9 +63,9 @@ const SPACING = 20;
       title: "Gumbalimba Park",
       carousel: [
         {img: require("../../../images/imagesAmericaCentro/gumbalimba1.jpg")},
-        {img: require("../../../images/imagesAmericaCentro/gumbalimba2.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/gumbalimba2.jpg")},//
         {img: require("../../../images/imagesAmericaCentro/gumbalimba3.jpg")},
-        {img: require("../../../images/imagesAmericaCentro/gumbalimba4.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/gumbalimba4.jpg")},//
      ]
     },
     {
@@ -73,10 +73,10 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaCentro/honduras5.jpg"),
       title: "Little French Key",
       carousel: [
-        {img: require("../../../images/imagesAmericaCentro/coatepeque1.jpg")},
-        {img: require("../../../images/imagesAmericaCentro/coatepeque2.jpg")},
-        {img: require("../../../images/imagesAmericaCentro/coatepeque3.jpg")},
-        {img: require("../../../images/imagesAmericaCentro/coatepeque4.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/frenchkey1.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/frenchkey2.jpg")},//
+        {img: require("../../../images/imagesAmericaCentro/frenchkey3.jpg")},
+        {img: require("../../../images/imagesAmericaCentro/frenchkey4.jpg")},
      ]
     },
   ];

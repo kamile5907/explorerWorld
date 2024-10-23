@@ -31,8 +31,8 @@ const SPACING = 20;
       carousel: [
         {img: require("../../../images/imagesAmericaSul/vallenevado1.jpg")},
         {img: require("../../../images/imagesAmericaSul/vallenevado2.jpg")},
-        {img: require("../../../images/imagesAmericaSul/vallenevado.jpg")},
-        {img: require("../../../images/imagesAmericaSul/vallenevado4.jpg")},
+        {img: require("../../../images/imagesAmericaSul/vallenevado.jpg")},//
+        {img: require("../../../images/imagesAmericaSul/vallenevado4.jpg")},//
      ]
     },
     {
@@ -40,10 +40,10 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaSul/chile2.jpg"),
       title: "Torres Del Paine",
       carousel: [
-        {img: require("../../../images/imagesAmericaSul/torresdelpaine1.jpg")},
+        {img: require("../../../images/imagesAmericaSul/torresdelpaine1.jpg")},//
         {img: require("../../../images/imagesAmericaSul/torresdelpaine2.jpg")},
         {img: require("../../../images/imagesAmericaSul/torresdelpaine3.jpg")},
-        {img: require("../../../images/imagesAmericaSul/torresdelpaine4.jpg")},
+        {img: require("../../../images/imagesAmericaSul/torresdelpaine4.jpg")},//
      ]
     },
     {
@@ -52,9 +52,9 @@ const SPACING = 20;
       title: "Terra do Fogo",
       carousel: [
         {img: require("../../../images/imagesAmericaSul/terraldofogo1.jpg")},
-        {img: require("../../../images/imagesAmericaSul/terradofogo4.jpg")},
+        {img: require("../../../images/imagesAmericaSul/terradofogo4.jpg")},//
         {img: require("../../../images/imagesAmericaSul/terradofogo3.jpg")},
-        {img: require("../../../images/imagesAmericaSul/terradelfogo.jpg")},
+        {img: require("../../../images/imagesAmericaSul/terradelfogo.jpg")},//
      ]
     },
     {
@@ -62,7 +62,7 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaSul/chile4.jpg"),//
       title: "Museu Nacional de Belas Artes",
       carousel: [
-        {img: require("../../../images/imagesAmericaSul/belasartes2.jpg")},
+        {img: require("../../../images/imagesAmericaSul/belasartes2.jpg")},//
         {img: require("../../../images/imagesAmericaSul/belasartes3.jpg")},
         {img: require("../../../images/imagesAmericaSul/musebelasartes.jpg")},
         {img: require("../../../images/imagesAmericaSul/belasartes4.jpg")},
@@ -73,9 +73,9 @@ const SPACING = 20;
       source: require("../../../images/imagesAmericaSul/chile5.jpg"),
       title: "Ilha De Pascoa",
       carousel: [
-        {img: require("../../../images/imagesAmericaSul/ilhadepascoa1.jpg")},
-        {img: require("../../../images/imagesAmericaSul/ilhadepascoa2.jpg")},
-        {img: require("../../../images/imagesAmericaSul/ilhadepascoa3.jpg")},
+        {img: require("../../../images/imagesAmericaSul/ilhadepascoa1.jpg")},//
+        {img: require("../../../images/imagesAmericaSul/ilhadepascoa2.jpg")},//
+        {img: require("../../../images/imagesAmericaSul/ilhadepascoa3.jpg")},//
         {img: require("../../../images/imagesAmericaSul/ilhadepascoa4.jpg")},
      ]
     },

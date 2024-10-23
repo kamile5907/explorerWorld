@@ -29,10 +29,10 @@ const places= [
       source: require("../../../images/Europa/grecia1.jpg"),
       title: "Santorini",
     carousel: [
-    {img: require("../../../images/Europa/santorini1.jpg")},
+    {img: require("../../../images/Europa/santorini1.jpg")},//
     {img: require("../../../images/Europa/santorini2.jpg")},
     {img: require("../../../images/Europa/santorini3.jpg")},
-    {img: require("../../../images/Europa/santorini4.jpg")},
+    {img: require("../../../images/Europa/santorini4.jpg")},//
  ] },
   {
     id: "Museu do Acropole",
@@ -76,7 +76,7 @@ const places= [
       {img: require("../../../images/Europa/knossos1.jpg")},
       {img: require("../../../images/Europa/knossos2.jpg")},
       {img: require("../../../images/Europa/knossos3.jpg")},
-      {img: require("../../../images/Europa/knossos4.jpg")},
+      {img: require("../../../images/Europa/knossos4.jpg")},//
     ]
   },
 ];

@@ -39,7 +39,7 @@ const places= [
       source: require("../../../images/Asia/catar2.jpg"),
       title: "Villaggio Mall",
     carousel: [
-      {img: require("../../../images/Asia/villaggio1.jpg")},
+      {img: require("../../../images/Asia/villaggio1.jpg")},//
       {img: require("../../../images/Asia/villaggio2.jpg")},
       {img: require("../../../images/Asia/villaggio3.jpg")},
       {img: require("../../../images/Asia/villaggio4.jpg")},
@@ -50,10 +50,10 @@ const places= [
       source: require("../../../images/Asia/catar3.jpg"),
       title: "Qatar National Library",
     carousel: [
-      {img: require("../../../images/Asia/arashiyama1.jpg")},
-      {img: require("../../../images/Asia/arashiyama2.jpg")},
-      {img: require("../../../images/Asia/arashiyama3.jpg")},
-      {img: require("../../../images/Asia/arashiyama4.jpg")},
+      {img: require("../../../images/Asia/livraria1.jpg")},
+      {img: require("../../../images/Asia/livraria2.jpg")},
+      {img: require("../../../images/Asia/livraria3.jpg")},
+      {img: require("../../../images/Asia/livraria4.jpg")},
     ]
   },
   {
@@ -61,10 +61,10 @@ const places= [
       source: require("../../../images/Asia/catar4.jpg"),
       title: "Sealine Beach, Mesaieed",
     carousel: [
-      {img: require("../../../images/Asia/gyoen1.jpg")},
-      {img: require("../../../images/Asia/gyoen2.jpg")},
-      {img: require("../../../images/Asia/gyoen3.jpg")},
-      {img: require("../../../images/Asia/gyoen4.jpg")},
+      {img: require("../../../images/Asia/beach1.jpg")},
+      {img: require("../../../images/Asia/beach2.jpg")},
+      {img: require("../../../images/Asia/beach3.jpg")},
+      {img: require("../../../images/Asia/beach4.jpg")},
     ]
   },
   {
@@ -73,10 +73,10 @@ const places= [
       source: require("../../../images/Asia/catar5.jpg"),
       title: "Lusail Winter Wonderland",
     carousel: [
-      {img: require("../../../images/Asia/ghibli1.jpg")},
-      {img: require("../../../images/Asia/ghibli2.jpg")},
-      {img: require("../../../images/Asia/ghibli3.jpg")},
-      {img: require("../../../images/Asia/ghibli4.jpg")},
+      {img: require("../../../images/Asia/lusail1.jpg")},
+      {img: require("../../../images/Asia/lusail2.jpg")},//
+      {img: require("../../../images/Asia/lusail3.jpg")},
+      {img: require("../../../images/Asia/lusail4.jpg")},
     ]
   },
 ];

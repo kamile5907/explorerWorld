@@ -31,7 +31,7 @@ const places = [
     carousel: [
       {img: require("../../../images/Oceania/garden1.jpg")},
       {img: require("../../../images/Oceania/garden2.jpg")},
-      {img: require("../../../images/Oceania/garden3.jpg")},
+      {img: require("../../../images/Oceania/garden3.jpg")},//
       {img: require("../../../images/Oceania/garden4.jpg")},
    ] },
  
@@ -41,7 +41,7 @@ const places = [
     title: "Kula WILD Adventure Park",
     carousel: [
       {img: require("../../../images/Oceania/kula1.jpg")},
-      {img: require("../../../images/Oceania/kula2.jpg")},
+      {img: require("../../../images/Oceania/kula2.jpg")},//
       {img: require("../../../images/Oceania/kula3.jpg")},
       {img: require("../../../images/Oceania/kula4.jpg")},
    ] },
@@ -51,7 +51,7 @@ const places = [
     title: "Port Denarau Marina",
     carousel: [
       {img: require("../../../images/Oceania/port1.jpg")},
-      {img: require("../../../images/Oceania/port2.jpg")},
+      {img: require("../../../images/Oceania/port2.jpg")},//
       {img: require("../../../images/Oceania/port3.jpg")},
       {img: require("../../../images/Oceania/port4.jpg")},
    ] },
@@ -63,7 +63,7 @@ const places = [
       {img: require("../../../images/Oceania/colo1.jpg")},
       {img: require("../../../images/Oceania/colo2.jpg")},
       {img: require("../../../images/Oceania/colo3.jpg")},
-      {img: require("../../../images/Oceania/colo4.jpg")},
+      {img: require("../../../images/Oceania/colo4.jpg")},//
    ] },
 ];
 

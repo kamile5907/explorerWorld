@@ -31,11 +31,11 @@ const places= [
     carousel: [
     {img: require("../../../images/Asia/pavilion1.jpg")},
     {img: require("../../../images/Asia/pavilion2.jpg")},
-    {img: require("../../../images/Asia/pavilion3.jpg")},
-    {img: require("../../../images/Asia/pavilion4.jpg")},
+    {img: require("../../../images/Asia/pavilion3.jpg")},//
+    {img: require("../../../images/Asia/pavilion4.jpg")},//
  ] },
   {
-    id: "Batu Chaves",
+    id: "Batu Caves",
       source: require("../../../images/Asia/malasia2.jpg"),
       title: "Batu Caves",
     carousel: [
@@ -61,10 +61,10 @@ const places= [
       source: require("../../../images/Asia/malasia4.jpg"),
       title: "Torre de Kuala Lumpur",
     carousel: [
-      {img: require("../../../images/Asia/kuala1.jpg")},
+      {img: require("../../../images/Asia/kuala1.jpg")},//
       {img: require("../../../images/Asia/kuala2.jpg")},
       {img: require("../../../images/Asia/kuala3.jpg")},
-      {img: require("../../../images/Asia/kuala4.jpg")},
+      {img: require("../../../images/Asia/kuala4.jpg")},//
     ]
   },
   {
@@ -74,9 +74,9 @@ const places= [
       title: "KLCC Park",
     carousel: [
       {img: require("../../../images/Asia/klcc1.jpg")},
-      {img: require("../../../images/Asia/klcc2.jpg")},
+      {img: require("../../../images/Asia/klcc2.jpg")},//
       {img: require("../../../images/Asia/klcc3.jpg")},
-      {img: require("../../../images/Asia/klcc4.jpg")},
+      {img: require("../../../images/Asia/klcc4.jpg")},//
     ]
   },
 ];

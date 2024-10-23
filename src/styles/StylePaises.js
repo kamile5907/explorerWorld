@@ -32,7 +32,7 @@ const stylesPaises = StyleSheet.create({
   Viewbtn: { 
     flexDirection: "row", 
     height: "20%", 
-    width: "100%" 
+    width: "100%" ,
   },
   btnVoltar: { 
     alignItems: "center", 

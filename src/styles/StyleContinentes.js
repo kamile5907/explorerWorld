@@ -11,6 +11,10 @@ const stylesContinente = StyleSheet.create({
     width: "100%",
     backgroundColor: "#ffffff",
   },
+  btnVoltar: {
+    left: "3%", 
+    top: "3%"
+  },
   topImage: {
     width: "100%",
     height: "100%",
